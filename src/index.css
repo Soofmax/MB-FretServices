@@ -6,6 +6,9 @@
   body {
     @apply font-sans;
   }
+  html[lang="ar"] body {
+    font-family: 'Cairo', 'Inter', system-ui, sans-serif;
+  }
 }
 
 /* Local utilities for subtle animations used on 404 page */

@@ -61,7 +61,7 @@ const Contact: FC = () => {
             {/* Email */}
             <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all duration-300 animate-slide-up group">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <Mail size={32} className="text-white" />
+                <Mail size={32} className="text-white" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-primary-900 mb-4">{t('methods.email')}</h3>
               <a
@@ -78,7 +78,7 @@ const Contact: FC = () => {
             {/* Téléphone */}
             <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all duration-300 animate-slide-up group" style={{ animationDelay: '200ms' }}>
               <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <Phone size={32} className="text-white" />
+                <Phone size={32} className="text-white" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-primary-900 mb-4">{t('methods.phone')}</h3>
               <a
@@ -95,7 +95,7 @@ const Contact: FC = () => {
             {/* WhatsApp */}
             <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all duration-300 animate-slide-up group" style={{ animationDelay: '400ms' }}>
               <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <MessageCircle size={32} className="text-white" />
+                <MessageCircle size={32} className="text-white" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-primary-900 mb-4">{t('methods.whatsapp')}</h3>
               <a
@@ -114,7 +114,7 @@ const Contact: FC = () => {
             {/* Bureau */}
             <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all duration-300 animate-slide-up group" style={{ animationDelay: '600ms' }}>
               <div className="w-16 h-16 bg-gradient-to-br from-accent-400 to-accent-600 rounded-xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <MapPin size={32} className="text-white" />
+                <MapPin size={32} className="text-white" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-primary-900 mb-4">{t('methods.office')}</h3>
               <p className="text-gray-700 font-medium">
@@ -143,7 +143,7 @@ const Contact: FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-50 rounded-xl p-8">
               <h3 className="text-xl font-bold text-primary-900 mb-6 flex items-center">
-                <Send size={24} className="text-accent-500 mr-3" />
+                <Send size={24} className="text-accent-500 mr-3" aria-hidden="true" />
                 {t('guide.info_title')}
               </h3>
               <ul className="space-y-4">
@@ -161,7 +161,7 @@ const Contact: FC = () => {
 
             <div className="bg-gradient-to-br from-accent-50 to-accent-100 rounded-xl p-8">
               <h3 className="text-xl font-bold text-primary-900 mb-6 flex items-center">
-                <Clock size={24} className="text-accent-500 mr-3" />
+                <Clock size={24} className="text-accent-500 mr-3" aria-hidden="true" />
                 {t('guide.commitment_title')}
               </h3>
               <ul className="space-y-4">
@@ -195,7 +195,7 @@ const Contact: FC = () => {
               href="mailto:contact@mb-fretservices.com?subject=Demande de devis transport international"
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg bg-accent-500 text-white hover:bg-accent-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
-              <Mail size={20} className="mr-2" />
+              <Mail size={20} className="mr-2" aria-hidden="true" />
               {t('cta.email')}
             </a>
 
@@ -205,7 +205,7 @@ const Contact: FC = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg bg-green-600 text-white hover:bg-green-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
-              <MessageCircle size={20} className="mr-2" />
+              <MessageCircle size={20} className="mr-2" aria-hidden="true" />
               {t('cta.whatsapp')}
             </a>
 
@@ -213,7 +213,7 @@ const Contact: FC = () => {
               href="tel:+33123456789"
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg border-2 border-white text-white hover:bg-white hover:text-primary-900 transition-all duration-200"
             >
-              <Phone size={20} className="mr-2" />
+              <Phone size={20} className="mr-2" aria-hidden="true" />
               {t('cta.call')}
             </a>
           </div>

@@ -154,7 +154,7 @@ const Navbar: FC = () => {
               aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
               className="inline-flex items-center justify-center p-2 rounded-md text-primary-700 hover:text-accent-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-accent-500"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
             </button>
           </div>
         </div>
