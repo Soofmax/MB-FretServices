@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="referrer" content="no-referrer">
+    <script>
+      (function(l) {
+        // Known language codes to avoid mistaking them for a repo name on user pages
+        var langs = {'fr':1,'en':1,'pt':1,'es':1,'ar':1,'tr':1,'sw':1,'de':1,'it':1};
+        var path = l.pathname || '/';
+        var segs = path.split('/').filter(Boolean);
+        // Guess base: if the first segment is NOT a language, assume it is the repo name (/repo/…)
+        var base = '/';
+        if (segs.length && !langs[segs[0]]) {
+          base = '/' + segs[0] + '/';
+        }
+        // Build redirect target: send the original path+query+hash as ?p=… to index
+        var p = path + (l.search || '') + (l.hash || '');
+        var dest = base + '?p=' + encodeURIComponent(p);
+        l.replace(dest);
+      })(window.location);
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/" />
+    </noscript>
+  </head>
+  <body></body>
+</html>

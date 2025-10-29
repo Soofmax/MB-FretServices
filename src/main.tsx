@@ -5,6 +5,19 @@ import App from './App.tsx';
 import './index.css';
 import './i18n';
 
+// GitHub Pages SPA fallback support:
+// If the 404.html redirected to "/?p=/xxx", normalize back to "/xxx" before the app mounts.
+try {
+  const params = new URLSearchParams(window.location.search);
+  const p = params.get('p');
+  if (p) {
+    const target = p + window.location.hash;
+    window.history.replaceState(null, '', target);
+  }
+} catch {
+  // ignore
+}
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>

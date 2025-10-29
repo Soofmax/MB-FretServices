@@ -42,14 +42,16 @@ export function buildAlternateLinks(): { href: string; hrefLang: string }[] {
   };
 
   const alternates = SUP_LANGS.map((lng) => {
-    const href = new URL(pathForLang(key, lng), site).href.replace(/\/$/, '');
+    const rel = pathForLang(key, lng).replace(/^\//, ''); // make relative so BASE_URL is preserved
+    const href = new URL(rel, site).href.replace(/\/$/, '');
     const hrefLang = hreflangMap[lng];
     return { href, hrefLang };
   });
 
   const regional: Array<{ href: string; hrefLang: string }> = [];
   for (const lng of SUP_LANGS) {
-    const baseHref = new URL(pathForLang(key, lng), site).href.replace(/\/$/, '');
+    const rel = pathForLang(key, lng).replace(/^\//, '');
+    const baseHref = new URL(rel, site).href.replace(/\/$/, '');
     if (lng === 'fr') {
       ['fr-CI','fr-CM','fr-CD','fr-SN','fr-GA','fr-BJ','fr-TG','fr-FR'].forEach((code) => regional.push({ href: baseHref, hrefLang: code }));
     } else if (lng === 'en') {

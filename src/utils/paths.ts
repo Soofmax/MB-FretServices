@@ -109,14 +109,26 @@ const FREIGHT_ALIASES = new Set([
   'خدمات/الشحن-البحري'
 ]);
 
+function stripBase(pathname: string): string {
+  const base = (import.meta.env?.BASE_URL as string) || '/';
+  const normBase = base.endsWith('/') ? base : base + '/';
+  if (normBase !== '/' && pathname.startsWith(normBase)) {
+    // Keep leading slash for downstream logic
+    return pathname.slice(normBase.length - 1);
+  }
+  return pathname;
+}
+
 export function detectLangFromPath(pathname: string): Lang {
-  const seg = pathname.split('/').filter(Boolean)[0];
+  const p = stripBase(pathname);
+  const seg = p.split('/').filter(Boolean)[0];
   if (['fr','en','pt','ar','es','tr','sw','de','it'].includes(seg || '')) return seg as Lang;
   return 'fr';
 }
 
 export function keyFromPath(pathname: string): RouteKey {
-  const parts = pathname.split('/').filter(Boolean);
+  const p = stripBase(pathname);
+  const parts = p.split('/').filter(Boolean);
   // drop language segment if present
   if (['fr','en','pt','ar','es','tr','sw','de','it'].includes(parts[0])) {
     parts.shift();
@@ -147,7 +159,7 @@ export function pathForLang(key: RouteKey, lang: Lang): string {
  * - nested: 'services/fret-maritime'
  */
 export function localizeTo(to: string, lang: Lang): string {
-  const normalized = to.replace(/^\/+/, ''); // remove leading slash
+  const normalized = to.replace(/^\/*/, ''); // remove leading slash
   const key = keyFromPath(`/${lang}/${normalized}`);
   return pathForLang(key, lang);
 }
