@@ -5,7 +5,7 @@ import { Ship, Plane } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const NotFound: FC = () => {
-  const { t } = useTranslation(['notFound', 'navbar']);
+  const { t } = useTranslation(['notFound', 'navbar', 'common']);
 
   return (
     <div className="pt-16">

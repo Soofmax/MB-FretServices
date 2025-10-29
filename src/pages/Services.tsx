@@ -10,7 +10,7 @@ import { detectLangFromPath, pathForLang } from '../utils/paths';
 type ServiceKey = 'maritime' | 'air' | 'customs' | 'insurance';
 
 const Services: FC = () => {
-  const { t } = useTranslation('services');
+  const { t } = useTranslation(['services', 'common']);
   const lang = typeof window !== 'undefined' ? detectLangFromPath(window.location.pathname) : 'fr';
 
   const serviceDefs: Array<{ icon: ComponentType<{ size?: number | string; className?: string }>; key: ServiceKey }> = [
