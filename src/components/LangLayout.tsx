@@ -6,6 +6,7 @@ import SiteSEO from './SiteSEO';
 import ScrollToTop from './ScrollToTop';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { trackPageview } from '../analytics';
 
 type Params = {
   lng?: string;
@@ -33,7 +34,13 @@ const LangLayout: FC<{ children?: ReactNode }> = () => {
   useEffect(() => {
     const main = document.getElementById('main');
     if (main) main.focus();
-  }, [location.pathname]);
+    // Analytics page view
+    try {
+      trackPageview(location.pathname + location.search + location.hash);
+    } catch {
+      // ignore
+    }
+  }, [location.pathname, location.search, location.hash]);
 
   return (
     <>
