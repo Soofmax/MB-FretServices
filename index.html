@@ -2,13 +2,26 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MB Fret Services - Transport International Europe Asie Afrique</title>
     <meta name="description" content="MB Fret Services : Spécialiste du transport international. Fret maritime et aérien vers l'Afrique, l'Asie et l'Europe. Dédouanement et logistique intégrée.">
     <meta name="keywords" content="fret maritime, fret aérien, transport Afrique, transport Chine, transport Turquie, dédouanement, logistique internationale">
     <meta name="author" content="MB Fret Services">
     <meta name="theme-color" content="#0A2342" />
+
+    <!-- Content Security Policy (ajustable si vous ajoutez d'autres domaines) -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self';
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' https://images.pexels.com data:;
+      connect-src 'self';
+      base-uri 'self';
+      form-action 'self';
+      frame-ancestors 'none';
+      upgrade-insecure-requests
+    ">
 
     <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website">
@@ -30,6 +43,8 @@
     <!-- Preload hero image for better LCP -->
     <link rel="preload" as="image" href="https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" imagesrcset="https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800 800w, https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200 1200w, https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600 1600w" />
 
+    <!-- Performance preconnects -->
+    <link rel="preconnect" href="https://images.pexels.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

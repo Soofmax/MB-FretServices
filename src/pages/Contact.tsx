@@ -200,7 +200,7 @@ const Contact: FC = () => {
             </a>
 
             <a
-              href="https://wa.me/33123456789?text=Bonjour, je souhaite obtenir un devis pour un transport international"
+              href={`https://wa.me/33123456789?text=${encodeURIComponent('Bonjour, je souhaite obtenir un devis pour un transport international')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg bg-green-600 text-white hover:bg-green-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"

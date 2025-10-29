@@ -40,6 +40,8 @@ const DestinationsShowcase: FC = () => {
                   alt={`${destination.country} - ${destination.city}`}
                   loading="lazy"
                   decoding="async"
+                  width={800}
+                  height={533}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>

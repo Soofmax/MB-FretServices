@@ -149,6 +149,8 @@ const Services: FC = () => {
                         alt={`Service ${title}`}
                         loading="lazy"
                         decoding="async"
+                        width={800}
+                        height={533}
                         className="w-full h-64 lg:h-80 object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-primary-900/30 to-transparent"></div>

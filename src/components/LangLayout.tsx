@@ -1,5 +1,5 @@
 import type { FC, ReactNode } from 'react';
-import { Outlet, useParams } from 'react-router-dom';
+import { Outlet, useParams, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import i18n, { SUPPORTED_LANGS, type SupportedLang } from '../i18n';
 import SiteSEO from './SiteSEO';
@@ -18,6 +18,7 @@ const isRtl = (lng: string) => ['ar', 'he', 'fa', 'ur'].includes(lng);
 
 const LangLayout: FC<{ children?: ReactNode }> = () => {
   const { lng } = useParams<Params>();
+  const location = useLocation();
 
   useEffect(() => {
     const language: SupportedLang = isSupported(lng) ? lng : 'fr';
@@ -27,6 +28,12 @@ const LangLayout: FC<{ children?: ReactNode }> = () => {
       document.documentElement.dir = isRtl(language) ? 'rtl' : 'ltr';
     }
   }, [lng]);
+
+  // Accessibilité: déplacer le focus sur le contenu principal après navigation
+  useEffect(() => {
+    const main = document.getElementById('main');
+    if (main) main.focus();
+  }, [location.pathname]);
 
   return (
     <>
