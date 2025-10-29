@@ -1,0 +1,15 @@
+{
+  "seo": {
+    "title": "Sayfa bulunamadı - MB Fret Services",
+    "description": "İstediğiniz sayfa bulunamıyor veya taşınmış olabilir."
+  },
+  "ui": {
+    "code": "404",
+    "heading": "Üzgünüz… Bu sayfa kaybolmuş.",
+    "message": "Takip ettiğiniz bağlantı bozuk olabilir veya sayfa taşınmış olabilir. Devam etmek için ana sayfaya dönün.",
+    "cta": "Ana sayfaya dön"
+  },
+  "quick": {
+    "title": "Faydalı sayfalar"
+  }
+}

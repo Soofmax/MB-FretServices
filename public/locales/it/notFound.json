@@ -1,0 +1,15 @@
+{
+  "seo": {
+    "title": "Pagina non trovata - MB Fret Services",
+    "description": "La pagina richiesta non è stata trovata o potrebbe essere stata spostata."
+  },
+  "ui": {
+    "code": "404",
+    "heading": "Ops… Questa pagina si è persa.",
+    "message": "Il link che hai seguito potrebbe essere interrotto oppure la pagina è stata spostata. Torna alla home per continuare la navigazione.",
+    "cta": "Torna alla home"
+  },
+  "quick": {
+    "title": "Pagine utili"
+  }
+}
