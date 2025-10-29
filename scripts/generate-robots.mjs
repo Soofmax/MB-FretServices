@@ -28,7 +28,37 @@ function readEnvSiteUrl() {
 
 function buildRobots(siteUrl) {
   const sitemap = new URL('/sitemap.xml', siteUrl).href;
-  return `User-agent: *
+  return `# robots.txt generated at build time
+# Allow major AI crawlers explicitly. See also /ai.txt for an AI-readable site overview.
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+# Google AI extension
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Apple
+User-agent: Applebot-Extended
+Allow: /
+
+# Default rules for all
+User-agent: *
 Allow: /
 
 Sitemap: ${sitemap}

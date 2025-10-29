@@ -1,8 +1,8 @@
 # MB Fret Services — Site statique (React + Vite + TS)
 
-Projet de site vitrine multilingue (FR/EN/PT) pour services de transport international. Stack moderne : React 18, Vite 5, TypeScript, Tailwind CSS, i18next, react-helmet-async.
+Projet de site vitrine multilingue (FR/EN/PT/ES/AR/TR/DE/IT/SW) pour services de transport international. Stack moderne : React 18, Vite 5, TypeScript, Tailwind CSS, i18next, react-helmet-async.
 
-Note : ce dépôt est destiné au développement. Les URLs finales (production) ne sont pas fixées ici par choix. Les éléments « URLs/host » se configurent via la variable d’environnement `VITE_SITE_URL` au moment du déploiement.
+Note : ce dépôt est destiné au développement. Les URLs finales (production) se configurent via `VITE_SITE_URL` au moment du déploiement.
 
 ## Démarrage
 
@@ -23,95 +23,91 @@ Build :
 
 ## Internationalisation (i18n)
 
-Les traductions sont dans `public/locales/{lng}/{namespace}.json`. Langues activées : fr, en, pt (plus alias de routage pour d’autres langues).
+Traductions dans `public/locales/{lng}/{ns}.json`. Langues activées : fr, en, pt, es, ar, tr, de, it, sw.
 
-Synchroniser les clés manquantes (FR → EN/PT) :
+Synchroniser les clés manquantes :
 - `npm run i18n:sync`
 
-Environnement supporté par le script :
-- `DEEPL_API_KEY` (optionnel — si présent, le script utilise DeepL)
-- `DEEPL_API_URL` (optionnel — défaut `https://api-free.deepl.com/v2/translate` si `DEEPL_API_KEY` est défini)
-- `LIBRETRANSLATE_URL` (fallback — défaut `https://libretranslate.com/translate`)
-- `I18N_TARGET_LANGS` (ex : `en,pt,es`)
-- `I18N_CONCURRENCY` (concurrence des requêtes — défaut `3`)
-- `DRY_RUN=1` pour ne pas écrire
+Variables supportées :
+- `DEEPL_API_KEY` (optionnel, sinon fallback LibreTranslate)
+- `DEEPL_API_URL`, `LIBRETRANSLATE_URL`
+- `I18N_TARGET_LANGS`, `I18N_CONCURRENCY`, `DRY_RUN`
 
-Cache : un cache des traductions est stocké dans `.cache/i18n-cache.json` pour accélérer fortement les exécutions suivantes.
-
-Le script n’échoue pas le CI en cas d’erreur réseau (best-effort).
+Cache : `.cache/i18n-cache.json`.
 
 ## SEO
 
 - Balises par page via `react-helmet-async` (`src/components/SEO.tsx`).
-- Données structurées (Organization/WebSite) globales via `SiteSEO`.
-- Sitemap XML généré par `scripts/generate-sitemap.mjs` (postbuild) et copié dans `public/`.
-- `robots.txt` dans `public/`.
+- Données structurées globales via `SiteSEO` (Organization, WebSite) + `LocalBusiness` avec coordonnées géo (Paris).
+- Sitemap XML généré poste-build par `scripts/generate-sitemap.mjs` et copié dans `public/` (+ dist/).
+- robots.txt généré poste-build par `scripts/generate-robots.mjs` (autorise explicitement GPTBot, Google-Extended, ClaudeBot, PerplexityBot, CCBot, Applebot-Extended) et référence le sitemap.
+- ai.txt (manifest pour LLM) généré poste-build par `scripts/generate-ai-txt.mjs` à la racine du site. Ce fichier résume les services, langues, zones desservies, pages clés et exemples d’intentions pour faciliter la compréhension des IA génératives.
 
-Astuce : définissez `VITE_SITE_URL` au build (ex : `.env.production`) pour des canoniques/hreflang/sitemap corrects en production. Par défaut, le code tombe sur l’origine du navigateur en dev.
+Astuce : définissez `VITE_SITE_URL` (ex : `.env.production`) pour produire des canoniques/hreflang/sitemap/ai.txt corrects en production.
+
+## Analytics
+
+- Google Analytics 4 (GTAG) léger, respectant Do Not Track et anonymisation IP.
+- Variables :
+  - `VITE_GA_ID=G-XXXXXXXXXX` (laisser vide pour désactiver)
+- Intégration : initialisation dans `src/main.tsx`, page_view sur chaque navigation dans `LangLayout`.
 
 ## Accessibilité
 
 - Lien d’évitement « Passer au contenu principal ».
-- Focus déplacé automatiquement sur `<main id="main">` à chaque navigation.
-- Icônes décoratives regroupées dans des conteneurs `aria-hidden` lorsque pertinent.
-
-À vérifier au besoin avec Lighthouse/Axe (contrastes, ordre de focus).
+- Focus automatique sur `<main id="main">` après navigation.
+- Icônes décoratives marquées `aria-hidden="true"`.
 
 ## Sécurité (front)
 
-Une CSP minimale est injectée dans `index.html` :
-- scripts autorisés depuis `self` uniquement
-- styles depuis `self` + Google Fonts (`'unsafe-inline'` nécessaire aux styles inline et CSS Fonts)
-- fonts depuis Google Fonts
-- images depuis `self`, `images.pexels.com`, `data:`
-- `frame-ancestors 'none'`, `upgrade-insecure-requests`
+CSP dans `index.html` :
+- script-src `self` + GTM
+- connect-src pour GA
+- style-src `self` + Google Fonts (avec `'unsafe-inline'`)
+- font-src Google Fonts
+- img-src `self` + images.pexels.com + GA + `data:`
+- frame-ancestors 'none', upgrade-insecure-requests
 
-À adapter si vous ajoutez des domaines (analytics/CDN).
-
-Tous les liens `target="_blank"` utilisent `rel="noopener noreferrer"`.
+Adapter si vous ajoutez d’autres domaines (CDN/analytics).
 
 ## Performance
 
-- Préchargement de l’image « hero » (LCP).
-- `preconnect` → Google Fonts/Fonts.gstatic + Images Pexels.
-- Largeur/hauteur ajoutées sur plusieurs `<img>` pour limiter le CLS en production.
-- Tailwind purge sur `./index.html` et `./src/**/*.{js,ts,jsx,tsx}`.
-
-Mesurer en prod avec Lighthouse et vérifier les Core Web Vitals.
+- Preload de l’image « hero ».
+- Preconnect vers images.pexels.com, Google Fonts, GTM/GA.
+- Dimensions d’images explicites (réduction du CLS).
 
 ## Routage et langues
 
-- SPA via React Router, préfixe de langue dans l’URL (`/:lng/...`).
-- `LocalizedLink` construit les chemins locaux (alias de slugs pour EN/PT en plus des canoniques FR).
+- SPA via React Router, préfixe `/:lng/...`.
+- `LocalizedLink` pour la construction des URLs localisées.
 - `LangLayout` positionne `lang`/`dir` sur `<html>`.
 
 ## Variables d’environnement
 
 Exemple (`.env.example`) :
 - `VITE_SITE_URL=https://example.com`
-
-À définir au moment du déploiement réel (non fixé dans ce dépôt de dev).
+- `VITE_GA_ID=G-XXXXXXXXXX`
+- `VITE_GSC_VERIFICATION=...` (optionnel, Google Search Console)
+- `VITE_BING_VERIFICATION=...` (optionnel)
 
 ## Scripts
 
 - `dev` — serveur Vite
-- `build` — build de production
+- `build` — build de prod
 - `preview` — prévisualisation du build
 - `lint` — ESLint
 - `typecheck` — TypeScript
 - `prebuild` — i18n sync (best-effort)
-- `postbuild` — génération du sitemap
+- `postbuild` — sitemap + robots + ai.txt
 
 ## Déploiement
 
-Ce dépôt n’impose pas de cible (GitHub Pages/Netlify/Vercel/Cloudflare Pages). Lors de la mise en ligne :
+- Définir `VITE_SITE_URL` (URL publique finale).
+- `npm run build` (sitemap/robots/ai.txt générés).
+- Servir `dist/` avec fallback SPA (/* → /index.html) si nécessaire.
 
-1) définir `VITE_SITE_URL` (URL publique finale)
-2) exécuter `npm run build` (génération sitemap incluse)
-3) servir le dossier `dist/`
-
-Pour les plateformes CDN (Netlify/CF Pages), vous pouvez compléter par des en-têtes de sécurité côté plateforme (HSTS, Permissions-Policy, etc.). Le fichier `netlify.toml` présent sert d’exemple mais n’est pas pris en compte ailleurs.
+En-têtes de sécurité côté plateforme recommandés (HSTS, Permissions-Policy…).
 
 ## Licence
 
-À définir par le propriétaire du projet (MIT/Apache-2.0/propriétaire). Si besoin, ajoutez un fichier `LICENSE` à la racine.
+Ce dépôt inclut un fichier `LICENSE` (MIT). Adapter si nécessaire.

@@ -7,7 +7,7 @@
     "dev": "vite",
     "prebuild": "node scripts/translate-missing.mjs",
     "build": "vite build",
-    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/generate-robots.mjs",
+    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/generate-robots.mjs && node scripts/generate-ai-txt.mjs",
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.app.json --noEmit",
     "preview": "vite preview",
