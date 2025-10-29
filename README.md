@@ -29,11 +29,14 @@ Synchroniser les clés manquantes (FR → EN/PT) :
 - `npm run i18n:sync`
 
 Environnement supporté par le script :
-- `LINGODEV_API_URL` (optionnel)
-- `LINGODEV_API_KEY` (optionnel)
-- `LIBRETRANSLATE_URL` (fallback)
+- `DEEPL_API_KEY` (optionnel — si présent, le script utilise DeepL)
+- `DEEPL_API_URL` (optionnel — défaut `https://api-free.deepl.com/v2/translate` si `DEEPL_API_KEY` est défini)
+- `LIBRETRANSLATE_URL` (fallback — défaut `https://libretranslate.com/translate`)
 - `I18N_TARGET_LANGS` (ex : `en,pt,es`)
+- `I18N_CONCURRENCY` (concurrence des requêtes — défaut `3`)
 - `DRY_RUN=1` pour ne pas écrire
+
+Cache : un cache des traductions est stocké dans `.cache/i18n-cache.json` pour accélérer fortement les exécutions suivantes.
 
 Le script n’échoue pas le CI en cas d’erreur réseau (best-effort).
 

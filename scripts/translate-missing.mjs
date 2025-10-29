@@ -3,37 +3,39 @@ import path from 'path';
 import url from 'url';
 
 /**
- * Auto-translate missing keys from base language (fr) to targets (en, pt).
- * Provider order:
- *  - LingoDev if (URL is configured OR API key present → default URL) and key is set
- *  - LibreTranslate public endpoint as fallback (best-effort, with light backoff on 429)
+ * Auto-traduit les clés manquantes depuis la langue source (fr) vers les langues cibles (en, pt).
+ * Fournisseurs:
+ *  - DeepL si DEEPL_API_KEY est défini (qualité élevée)
+ *  - Sinon LibreTranslate (gratuit/public), avec backoff léger sur 429
+ *
+ * Améliorations vs version précédente:
+ *  - Suppression complète de LingoDev
+ *  - Cache local pour réutiliser les traductions (accélère fortement les runs suivants)
+ *  - Concurrence contrôlée (I18N_CONCURRENCY) pour accélérer tout en restant raisonnable
  *
  * Usage:
  *   node scripts/translate-missing.mjs
  *
  * Env:
- *   LINGODEV_API_URL (optional; defaults to https://api.lingo.dev/v1/translate if LINGODEV_API_KEY is set)
- *   LINGODEV_API_KEY (raw token, without the "Bearer " prefix)
- *   LIBRETRANSLATE_URL (optional, default https://libretranslate.com/translate)
- *   DRY_RUN=1 (optional, don't write files)
- *
- * Notes:
- *   - On startup, logs the chosen provider and target languages to aid CI diagnostics.
- *   - When falling back to LibreTranslate, applies a small retry/backoff on HTTP 429 to reduce rate-limit errors.
+ *   DEEPL_API_KEY           (optionnel)
+ *   DEEPL_API_URL           (optionnel, défaut https://api-free.deepl.com/v2/translate si DEEPL_API_KEY fourni)
+ *   LIBRETRANSLATE_URL      (optionnel, défaut https://libretranslate.com/translate)
+ *   I18N_TARGET_LANGS       (ex: "en,pt,es" — défaut "en,pt")
+ *   I18N_CONCURRENCY        (ex: 3 — défaut 3)
+ *   DRY_RUN=1               (ne pas écrire sur disque)
  */
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '..');
 const LOCALES_ROOT = path.join(repoRoot, 'public', 'locales');
+const CACHE_DIR = path.join(repoRoot, '.cache');
+const CACHE_FILE = path.join(CACHE_DIR, 'i18n-cache.json');
 
 const BASE_LANG = 'fr';
-// Control target languages via env to avoid API rate limits on build.
-// Example: I18N_TARGET_LANGS="en,pt,es" (defaults to en,pt)
 const TARGET_LANGS = (process.env.I18N_TARGET_LANGS
   ? process.env.I18N_TARGET_LANGS.split(',').map(s => s.trim()).filter(Boolean)
   : ['en', 'pt']);
-
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const CONCURRENCY = Math.max(1, Number(process.env.I18N_CONCURRENCY || 3));
 
 function readJson(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -41,6 +43,9 @@ function readJson(p) {
 function writeJson(p, data) {
   const json = JSON.stringify(data, null, 2) + '\n';
   fs.writeFileSync(p, json, 'utf8');
+}
+function safeMkdir(dir) {
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
 function listNamespaces(lang) {
@@ -53,7 +58,6 @@ function ensureDirsForTargets(namespaces) {
   for (const t of TARGET_LANGS) {
     const dir = path.join(LOCALES_ROOT, t);
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-    // ensure files exist
     for (const ns of namespaces) {
       const p = path.join(dir, ns);
       if (!fs.existsSync(p)) fs.writeFileSync(p, '{}\n', 'utf8');
@@ -108,7 +112,6 @@ function setByPath(obj, pathStr, value) {
   for (let i = 0; i < parts.length; i++) {
     const p = parts[i];
     const isLast = i === parts.length - 1;
-    const isIndex = /^\d+$/.test(p);
     if (isLast) {
       cur[p] = value;
       return;
@@ -117,70 +120,79 @@ function setByPath(obj, pathStr, value) {
       cur[p] = /^\d+$/.test(parts[i + 1]) ? [] : {};
     }
     cur = cur[p];
-    // Ensure array shape when next is index
-    if (Array.isArray(cur) && !isIndex) {
-      // no-op
-    }
   }
 }
 
-// Provider selection (with sensible defaults)
-const RAW_LINGO_URL = process.env.LINGODEV_API_URL || '';
-const LINGODEV_API_KEY = process.env.LINGODEV_API_KEY || process.env.LINGODOTDEV_API_KEY || '';
-const DEFAULT_LINGO_URL = 'https://api.lingo.dev/v1/translate';
-// If user set an API key but not the URL, try the default Engine endpoint.
-// If it fails, we'll fall back to LibreTranslate gracefully.
-const LINGODEV_API_URL = RAW_LINGO_URL || (LINGODEV_API_KEY ? DEFAULT_LINGO_URL : '');
+/* ---------- Provider selection ---------- */
+const DEEPL_API_KEY = process.env.DEEPL_API_KEY || '';
+const DEEPL_API_URL = process.env.DEEPL_API_URL || (DEEPL_API_KEY ? 'https://api-free.deepl.com/v2/translate' : '');
 const LIBRE_URL = process.env.LIBRETRANSLATE_URL || 'https://libretranslate.com/translate';
-
-// Normalize language codes for provider
-function mapLangForProvider(lang, provider) {
-  if (provider === 'lingodev') {
-    // Assume 'fr', 'en', 'pt' supported
-    return lang;
-  }
-  if (provider === 'libre') {
-    // 'pt' is okay
-    return lang;
-  }
-  return lang;
-}
 
 function debugLogProvider() {
   const targets = TARGET_LANGS.join(', ');
-  if (LINGODEV_API_URL) {
-    console.log(`[i18n] Provider: LingoDev (${LINGODEV_API_URL}). Targets: ${targets}`);
+  if (DEEPL_API_KEY) {
+    console.log(`[i18n] Provider: DeepL (${DEEPL_API_URL}). Targets: ${targets}. Concurrency=${CONCURRENCY}`);
   } else {
-    console.log(`[i18n] Provider: LibreTranslate (${LIBRE_URL}). Targets: ${targets}`);
+    console.log(`[i18n] Provider: LibreTranslate (${LIBRE_URL}). Targets: ${targets}. Concurrency=${CONCURRENCY}`);
   }
 }
 
-async function translateWithLingoDev(text, source, target) {
-  const src = mapLangForProvider(source, 'lingodev');
-  const tgt = mapLangForProvider(target, 'lingodev');
-  let res;
-  try {
-    res = await fetch(LINGODEV_API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        ...(LINGODEV_API_KEY ? { Authorization: `Bearer ${LINGODEV_API_KEY}` } : {}),
-      },
-      body: JSON.stringify({ q: text, source: src, target: tgt }),
-    });
-  } catch (err) {
-    const cause = err && err.cause ? err.cause : null;
-    const info = cause
-      ? ` cause: ${cause.code || ''} ${cause.hostname || ''} ${cause.syscall || ''}`.trim()
-      : '';
-    throw new Error(`LingoDev fetch failed.${info ? ' ' + info : ''}`);
+// DeepL mapping (minimal)
+function mapTargetForDeepL(lang) {
+  switch (lang) {
+    case 'en': return 'EN-GB';
+    case 'pt': return 'PT-PT';
+    case 'fr': return 'FR';
+    case 'es': return 'ES';
+    case 'de': return 'DE';
+    case 'it': return 'IT';
+    case 'tr': return 'TR';
+    default: return (lang || '').toUpperCase();
   }
+}
+
+// LibreTranslate mapping (accepts 'en','pt','fr',...)
+function mapForLibre(lang) {
+  return lang;
+}
+
+/* ---------- Caching ---------- */
+function loadCache() {
+  try {
+    return readJson(CACHE_FILE);
+  } catch {
+    return {};
+  }
+}
+function saveCache(cache) {
+  safeMkdir(CACHE_DIR);
+  writeJson(CACHE_FILE, cache);
+}
+function cacheKey(text, source, target) {
+  return `${source}::${target}::${text}`;
+}
+
+/* ---------- Providers ---------- */
+async function translateWithDeepL(text, source, target) {
+  // DeepL n'exige pas toujours source_lang. On privilégie target_lang.
+  const params = new URLSearchParams();
+  params.set('text', text);
+  params.set('target_lang', mapTargetForDeepL(target));
+  if (source) params.set('source_lang', mapTargetForDeepL(source).replace(/-.+$/, '')); // FR/EN/PT…
+  const res = await fetch(DEEPL_API_URL, {
+    method: 'POST',
+    headers: {
+      'Authorization': `DeepL-Auth-Key ${DEEPL_API_KEY}`,
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: params.toString(),
+  });
   if (!res.ok) {
-    throw new Error(`LingoDev HTTP ${res.status}`);
+    throw new Error(`DeepL HTTP ${res.status}`);
   }
   const data = await res.json();
-  // Try common shapes
-  return data.translatedText || data.translation || data.result || data.text || '';
+  const tr = data && data.translations && data.translations[0] && data.translations[0].text;
+  return tr || '';
 }
 
 async function translateWithLibre(text, source, target) {
@@ -189,8 +201,8 @@ async function translateWithLibre(text, source, target) {
     headers: { 'Content-Type': 'application/json', accept: 'application/json' },
     body: JSON.stringify({
       q: text,
-      source: mapLangForProvider(source, 'libre'),
-      target: mapLangForProvider(target, 'libre'),
+      source: mapForLibre(source),
+      target: mapForLibre(target),
       format: 'text',
     }),
   });
@@ -201,6 +213,7 @@ async function translateWithLibre(text, source, target) {
   return data.translatedText || '';
 }
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 async function translateWithLibreWithBackoff(text, source, target, retries = 2) {
   let attempt = 0;
   while (true) {
@@ -221,23 +234,42 @@ async function translateWithLibreWithBackoff(text, source, target, retries = 2) 
   }
 }
 
-async function translate(text, source, target) {
-  // Skip empty or identical languages
-  if (!text || source === target) return text;
+/* ---------- High-level translate (with cache) ---------- */
+const cache = loadCache();
 
-  // Prefer LingoDev if configured (URL present → either explicit or defaulted because key is present)
-  if (LINGODEV_API_URL) {
-    try {
-      return await translateWithLingoDev(text, source, target);
-    } catch (e) {
-      const msg = e && e.message ? e.message : e;
-      console.warn('LingoDev translation failed, falling back to LibreTranslate:', msg, 'url=', LINGODEV_API_URL);
-    }
+async function translate(text, source, target) {
+  if (!text || source === target) return text;
+  const key = cacheKey(text, source, target);
+  if (cache[key]) return cache[key];
+
+  let out = '';
+  if (DEEPL_API_KEY) {
+    out = await translateWithDeepL(text, source, target);
+  } else {
+    out = await translateWithLibreWithBackoff(text, source, target);
   }
-  // Fallback with light backoff on 429
-  return await translateWithLibreWithBackoff(text, source, target);
+  if (out && out.trim()) {
+    cache[key] = out;
+  }
+  return out;
 }
 
+/* ---------- Concurrency helper ---------- */
+async function runWithConcurrency(items, worker, limit) {
+  const results = [];
+  let index = 0;
+  async function runner() {
+    while (index < items.length) {
+      const i = index++;
+      results[i] = await worker(items[i], i);
+    }
+  }
+  const runners = Array.from({ length: Math.min(limit, items.length) }, runner);
+  await Promise.all(runners);
+  return results;
+}
+
+/* ---------- Main per-namespace processing ---------- */
 async function processNamespace(ns) {
   const basePath = path.join(LOCALES_ROOT, BASE_LANG, ns);
   if (!fs.existsSync(basePath)) return;
@@ -254,26 +286,28 @@ async function processNamespace(ns) {
       // keep empty
     }
 
-    let changed = false;
-    for (const { key, value: frText } of entries) {
+    const missing = entries.filter(({ key }) => {
       const existing = getByPath(targetObj, key);
-      if (typeof existing === 'string' && existing.trim().length > 0) continue;
+      return !(typeof existing === 'string' && existing.trim().length > 0);
+    });
 
-      // Translate
-      let translated = '';
+    if (missing.length === 0) {
+      console.log(`No changes for ${target}/${ns}`);
+      continue;
+    }
+
+    let changed = false;
+    await runWithConcurrency(missing, async ({ key, value: frText }) => {
       try {
-        translated = await translate(frText, BASE_LANG, target);
-        // Small delay to be friendly with public MT endpoints
-        await sleep(120);
+        const translated = await translate(frText, BASE_LANG, target);
+        if (translated && translated.trim().length > 0) {
+          setByPath(targetObj, key, translated);
+          changed = true;
+        }
       } catch (e) {
         console.warn(`Translation error for key "${key}" (${BASE_LANG}->${target}):`, e.message || e);
-        continue;
       }
-      if (translated && translated.trim().length > 0) {
-        setByPath(targetObj, key, translated);
-        changed = true;
-      }
-    }
+    }, CONCURRENCY);
 
     if (changed) {
       if (process.env.DRY_RUN) {
@@ -303,6 +337,13 @@ async function main() {
 
   for (const ns of namespaces) {
     await processNamespace(ns);
+  }
+
+  // Persist cache on disk
+  try {
+    if (!process.env.DRY_RUN) saveCache(cache);
+  } catch (e) {
+    console.warn('Failed to save translation cache:', e.message || e);
   }
 
   console.log('i18n sync complete.');
