@@ -84,6 +84,18 @@ const SLUGS = {
   },
 };
 
+const HREFLANG_MAP = {
+  fr: 'fr-FR',
+  en: 'en-GB',
+  pt: 'pt-PT',
+  ar: 'ar',
+  es: 'es-ES',
+  tr: 'tr-TR',
+  sw: 'sw-KE',
+  de: 'de-DE',
+  it: 'it-IT',
+};
+
 const PATH_KEYS = [
   'home',
   'services',
@@ -171,7 +183,7 @@ function buildSitemap(entries, siteUrl) {
           const altSlug = SLUGS[lng][key];
           const altPath = `/${lng}${altSlug ? `/${altSlug}` : ''}`;
           const altHref = new URL(altPath, siteUrl).href.replace(/\/$/, '');
-          const hrefLang = lng === 'fr' ? 'fr-FR' : lng === 'en' ? 'en-GB' : 'pt-PT';
+          const hrefLang = HREFLANG_MAP[lng] || lng;
           return `    <xhtml:link rel="alternate" hreflang="${hrefLang}" href="${altHref}" />`;
         })
         .join('\n');
