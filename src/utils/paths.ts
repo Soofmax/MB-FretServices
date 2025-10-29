@@ -150,6 +150,4 @@ export function localizeTo(to: string, lang: Lang): string {
   const normalized = to.replace(/^\/+/, ''); // remove leading slash
   const key = keyFromPath(`/${lang}/${normalized}`);
   return pathForLang(key, lang);
-}/${normalized}`);
-  return pathForLang(key, lang);
 }

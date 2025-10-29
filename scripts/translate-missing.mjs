@@ -6,16 +6,20 @@ import url from 'url';
  * Auto-translate missing keys from base language (fr) to targets (en, pt).
  * Provider order:
  *  - LingoDev if (URL is configured OR API key present → default URL) and key is set
- *  - LibreTranslate public endpoint as fallback (best-effort)
+ *  - LibreTranslate public endpoint as fallback (best-effort, with light backoff on 429)
  *
  * Usage:
  *   node scripts/translate-missing.mjs
  *
  * Env:
  *   LINGODEV_API_URL (optional; defaults to https://api.lingo.dev/v1/translate if LINGODEV_API_KEY is set)
- *   LINGODEV_API_KEY
+ *   LINGODEV_API_KEY (raw token, without the "Bearer " prefix)
  *   LIBRETRANSLATE_URL (optional, default https://libretranslate.com/translate)
  *   DRY_RUN=1 (optional, don't write files)
+ *
+ * Notes:
+ *   - On startup, logs the chosen provider and target languages to aid CI diagnostics.
+ *   - When falling back to LibreTranslate, applies a small retry/backoff on HTTP 429 to reduce rate-limit errors.
  */
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
@@ -122,7 +126,7 @@ function setByPath(obj, pathStr, value) {
 
 // Provider selection (with sensible defaults)
 const RAW_LINGO_URL = process.env.LINGODEV_API_URL || '';
-const LINGODEV_API_KEY = process.env.LINGODEV_API_KEY || '';
+const LINGODEV_API_KEY = process.env.LINGODEV_API_KEY || process.env.LINGODOTDEV_API_KEY || '';
 const DEFAULT_LINGO_URL = 'https://api.lingo.dev/v1/translate';
 // If user set an API key but not the URL, try the default Engine endpoint.
 // If it fails, we'll fall back to LibreTranslate gracefully.
@@ -142,17 +146,35 @@ function mapLangForProvider(lang, provider) {
   return lang;
 }
 
+function debugLogProvider() {
+  const targets = TARGET_LANGS.join(', ');
+  if (LINGODEV_API_URL) {
+    console.log(`[i18n] Provider: LingoDev (${LINGODEV_API_URL}). Targets: ${targets}`);
+  } else {
+    console.log(`[i18n] Provider: LibreTranslate (${LIBRE_URL}). Targets: ${targets}`);
+  }
+}
+
 async function translateWithLingoDev(text, source, target) {
   const src = mapLangForProvider(source, 'lingodev');
   const tgt = mapLangForProvider(target, 'lingodev');
-  const res = await fetch(LINGODEV_API_URL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      ...(LINGODEV_API_KEY ? { Authorization: `Bearer ${LINGODEV_API_KEY}` } : {}),
-    },
-    body: JSON.stringify({ q: text, source: src, target: tgt }),
-  });
+  let res;
+  try {
+    res = await fetch(LINGODEV_API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        ...(LINGODEV_API_KEY ? { Authorization: `Bearer ${LINGODEV_API_KEY}` } : {}),
+      },
+      body: JSON.stringify({ q: text, source: src, target: tgt }),
+    });
+  } catch (err) {
+    const cause = err && err.cause ? err.cause : null;
+    const info = cause
+      ? ` cause: ${cause.code || ''} ${cause.hostname || ''} ${cause.syscall || ''}`.trim()
+      : '';
+    throw new Error(`LingoDev fetch failed.${info ? ' ' + info : ''}`);
+  }
   if (!res.ok) {
     throw new Error(`LingoDev HTTP ${res.status}`);
   }
@@ -179,6 +201,26 @@ async function translateWithLibre(text, source, target) {
   return data.translatedText || '';
 }
 
+async function translateWithLibreWithBackoff(text, source, target, retries = 2) {
+  let attempt = 0;
+  while (true) {
+    try {
+      return await translateWithLibre(text, source, target);
+    } catch (e) {
+      const msg = String(e && e.message ? e.message : e);
+      const is429 = msg.includes('HTTP 429');
+      if (is429 && attempt < retries) {
+        const wait = 800 * (attempt + 1);
+        console.warn(`LibreTranslate rate-limited (429). Retrying in ${wait}ms...`);
+        await sleep(wait);
+        attempt++;
+        continue;
+      }
+      throw e;
+    }
+  }
+}
+
 async function translate(text, source, target) {
   // Skip empty or identical languages
   if (!text || source === target) return text;
@@ -188,11 +230,12 @@ async function translate(text, source, target) {
     try {
       return await translateWithLingoDev(text, source, target);
     } catch (e) {
-      console.warn('LingoDev translation failed, falling back to LibreTranslate:', e.message || e);
+      const msg = e && e.message ? e.message : e;
+      console.warn('LingoDev translation failed, falling back to LibreTranslate:', msg, 'url=', LINGODEV_API_URL);
     }
   }
-  // Fallback
-  return await translateWithLibre(text, source, target);
+  // Fallback with light backoff on 429
+  return await translateWithLibreWithBackoff(text, source, target);
 }
 
 async function processNamespace(ns) {
@@ -250,6 +293,7 @@ async function main() {
     console.error(`Base locale folder not found: ${path.join(LOCALES_ROOT, BASE_LANG)}`);
     process.exit(0);
   }
+  debugLogProvider();
   const namespaces = listNamespaces(BASE_LANG);
   if (namespaces.length === 0) {
     console.log('No namespaces found in base language, nothing to translate.');
