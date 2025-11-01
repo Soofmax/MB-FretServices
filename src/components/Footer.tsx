@@ -25,7 +25,7 @@ const Footer: FC = () => {
                 aria-label="WhatsApp"
                 title="WhatsApp"
               >
-                <MessageCircle size={20} />
+                <MessageCircle size={20} aria-hidden="true" />
               </a>
             </div>
             {/* Social icons */}
@@ -38,7 +38,7 @@ const Footer: FC = () => {
                 title="LinkedIn"
                 className="text-gray-300 hover:text-accent-400 transition-colors"
               >
-                <Linkedin size={22} />
+                <Linkedin size={22} aria-hidden="true" />
               </a>
               <a
                 href="https://twitter.com/NOM-DE-L-ENTREPRISE-PLACEHOLDER"
@@ -48,7 +48,7 @@ const Footer: FC = () => {
                 title="Twitter"
                 className="text-gray-300 hover:text-accent-400 transition-colors"
               >
-                <Twitter size={22} />
+                <Twitter size={22} aria-hidden="true" />
               </a>
               <a
                 href="https://www.instagram.com/NOM-DE-L-ENTREPRISE-PLACEHOLDER"
@@ -58,7 +58,7 @@ const Footer: FC = () => {
                 title="Instagram"
                 className="text-gray-300 hover:text-accent-400 transition-colors"
               >
-                <Instagram size={22} />
+                <Instagram size={22} aria-hidden="true" />
               </a>
               <a
                 href="https://www.facebook.com/NOM-DE-L-ENTREPRISE-PLACEHOLDER"
@@ -68,7 +68,7 @@ const Footer: FC = () => {
                 title="Facebook"
                 className="text-gray-300 hover:text-accent-400 transition-colors"
               >
-                <Facebook size={22} />
+                <Facebook size={22} aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -110,7 +110,7 @@ const Footer: FC = () => {
             <h4 className="text-lg font-semibold text-accent-400">{t('contact_title')}</h4>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
-                <Mail size={18} className="text-accent-400 flex-shrink-0" />
+                <Mail size={18} className="text-accent-400 flex-shrink-0" aria-hidden="true" />
                 <a
                   href="mailto:contact@mb-fretservices.com"
                   className="text-gray-300 hover:text-accent-400 transition-colors duration-200"
@@ -119,7 +119,7 @@ const Footer: FC = () => {
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone size={18} className="text-accent-400 flex-shrink-0" />
+                <Phone size={18} className="text-accent-400 flex-shrink-0" aria-hidden="true" />
                 <a
                   href="tel:+33123456789"
                   className="text-gray-300 hover:text-accent-400 transition-colors duration-200"
@@ -128,7 +128,7 @@ const Footer: FC = () => {
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <MessageCircle size={18} className="text-accent-400 flex-shrink-0" />
+                <MessageCircle size={18} className="text-accent-400 flex-shrink-0" aria-hidden="true" />
                 <a
                   href="https://wa.me/33123456789"
                   target="_blank"
@@ -139,7 +139,7 @@ const Footer: FC = () => {
                 </a>
               </li>
               <li className="flex items-start space-x-3">
-                <MapPin size={18} className="text-accent-400 flex-shrink-0 mt-1" />
+                <MapPin size={18} className="text-accent-400 flex-shrink-0 mt-1" aria-hidden="true" />
                 <span className="text-gray-300">
                   {t('city')}
                 </span>

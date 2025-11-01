@@ -1,0 +1,66 @@
+{
+  "seo": {
+    "title": "Trasporto Marittimo verso l'Africa - Container FCL LCL | MB Fret Services",
+    "description": "Trasporto marittimo professionale verso l'Africa: Congo, Angola, Costa d'Avorio. Container 20' e 40', FCL e LCL. Preventivo gratuito in 24h. Oltre 15 anni di esperienza."
+  },
+  "hero": {
+    "title": "Trasporto Marittimo verso l'Africa",
+    "subtitle": "Soluzioni container FCL e LCL",
+    "intro": "Trasporto marittimo professionale verso i principali porti africani. Container 20' e 40', groupage LCL, veicoli e merci speciali. Rotazioni regolari dai porti francesi ed europei.",
+    "cta_quote": "Preventivo Trasporto Marittimo",
+    "cta_whatsapp": "WhatsApp Diretto"
+  },
+  "why": {
+    "title": "Perché scegliere il nostro trasporto marittimo?",
+    "subtitle": "Esperienza riconosciuta nel trasporto marittimo verso l'Africa, con soluzioni adatte a tutte le esigenze."
+  },
+  "advantages": [
+    { "title": "Competenza Marittima", "description": "Oltre 15 anni di esperienza nel trasporto marittimo verso l'Africa" },
+    { "title": "Tempi Controllati", "description": "Rotazioni regolari e tempi di transito ottimizzati" },
+    { "title": "Sicurezza Garantita", "description": "Assicurazione cargo e tracciamento in tempo reale delle tue merci" }
+  ],
+  "services": {
+    "title": "I nostri Servizi di Trasporto Marittimo",
+    "subtitle": "Soluzioni marittime complete per tutti i tipi di merce. Dal ritiro alla consegna, gestiamo la tua spedizione dalla A alla Z.",
+    "list": [
+      "Container 20' e 40' (FCL - Full Container Load)",
+      "Groupage marittimo (LCL - Less than Container Load)",
+      "Trasporto di veicoli nuovi e usati",
+      "Macchinari industriali e attrezzature pesanti",
+      "Merci pericolose (IMO)",
+      "Container refrigerati (reefer)",
+      "Servizio door-to-door con ritiro",
+      "Sdoganamento import/export incluso"
+    ],
+    "cta": "Richiedi un Preventivo Personalizzato"
+  },
+  "destinations": {
+    "title": "Destinazioni Trasporto Marittimo - Africa",
+    "subtitle": "Rotazioni regolari verso i principali porti africani con tempi ottimizzati.",
+    "label_duration": "Tempo di transito",
+    "label_frequency": "Frequenza",
+    "label_departure": "Partenza da",
+    "cta_prefix": "Preventivo per "
+  },
+  "destinations_list": [
+    { "country": "Congo", "port": "Pointe-Noire", "duration": "18–22 giorni", "frequency": "Settimanale", "departure": "Le Havre, Anversa" },
+    { "country": "Angola", "port": "Luanda", "duration": "20–25 giorni", "frequency": "Bisettimanale", "departure": "Anversa, Rotterdam" },
+    { "country": "Costa d'Avorio", "port": "Abidjan", "duration": "12–15 giorni", "frequency": "Giornaliera", "departure": "Le Havre, Marsiglia" },
+    { "country": "Camerun", "port": "Douala", "duration": "15–18 giorni", "frequency": "Bisettimanale", "departure": "Anversa, Amburgo" }
+  ],
+  "faq": {
+    "title": "Domande Frequenti - Trasporto Marittimo",
+    "q1": "Qual è la differenza tra FCL e LCL?",
+    "a1": "FCL (Full Container Load): noleggi un container completo (20' o 40') esclusivamente per le tue merci. LCL (Less than Container Load): le tue merci condividono il container con altri spedizionieri, ideale per piccoli volumi.",
+    "q2": "Quali documenti sono necessari per il trasporto marittimo?",
+    "a2": "Fattura commerciale, lista d'imballaggio, polizza di carico (Bill of Lading), certificato d'origine se richiesto, e documenti specifici in base alla natura delle merci (certificati sanitari, ecc.).",
+    "q3": "Come posso tracciare il mio container durante il transito?",
+    "a3": "Forniamo un numero di tracciamento e l'accesso alla nostra piattaforma web per il monitoraggio in tempo reale, dal porto di partenza fino all'arrivo a destinazione."
+  },
+  "final": {
+    "title": "Pronto a spedire via mare?",
+    "text": "Ottieni il tuo preventivo personalizzato in meno di 24 ore. I nostri esperti analizzano le tue esigenze e propongono la soluzione marittima più economica.",
+    "cta": "Preventivo Trasporto Marittimo",
+    "whatsapp": "WhatsApp Immediato"
+  }
+}

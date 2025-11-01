@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "Our International Transport Services",
+    "subtitle": "End-to-end international logistics tailored to your needs. From cost-effective sea freight to express air transport, we handle your cargo from A to Z."
+  },
+  "maritime": {
+    "title": "Sea Freight",
+    "subtitle": "Cost-effective solutions for large volumes",
+    "description": "Our sea freight expertise lets us offer optimal solutions for large shipments to Africa and Asia. We handle all types of cargo with full tracking.",
+    "features": [
+      "20' and 40' containers (FCL)",
+      "Groupage (LCL) for small volumes",
+      "Vehicles and machinery transport",
+      "Special and dangerous goods",
+      "Port-to-port or door-to-door service",
+      "Real-time tracking via web platform"
+    ],
+    "destinations": "Key destinations: Congo, Angola, Côte d'Ivoire, Cameroon",
+    "more_link": "Learn more about sea freight"
+  },
+  "air": {
+    "title": "Air Freight",
+    "subtitle": "Speed and reliability for urgent shipments",
+    "description": "Air transport is ideal for high-value, perishable or urgent goods. Our partner network ensures tight lead times to all destinations.",
+    "features": [
+      "Express 24–48h to key destinations",
+      "Temperature-controlled transport",
+      "Fragile and high-value goods",
+      "Documents and samples",
+      "Real-time GPS tracking",
+      "All-risk insurance included"
+    ],
+    "destinations": "Served: China, Turkey, Morocco, Tunisia, Central African countries"
+  },
+  "customs": {
+    "title": "Customs Clearance",
+    "subtitle": "Comprehensive administrative expertise",
+    "description": "Our licensed customs brokers support you with all administrative formalities. We ensure regulatory compliance for your operations.",
+    "features": [
+      "Import/export declarations",
+      "Special customs regimes management",
+      "Tariff classification advice",
+      "Legal tax optimization",
+      "Representation in case of inspection",
+      "Ongoing regulatory monitoring"
+    ],
+    "destinations": "All French and European ports and airports"
+  },
+  "insurance": {
+    "title": "Cargo Insurance",
+    "subtitle": "Total protection for your goods",
+    "description": "Protect your investment with insurance solutions adapted to each transport mode. Full coverage from pickup to final delivery.",
+    "features": [
+      "All-risk transport insurance",
+      "War and strike coverage",
+      "General average protection",
+      "Expertise and fast settlement",
+      "Risk-prevention advice",
+      "Preferential rates based on volumes"
+    ],
+    "destinations": "Worldwide coverage for all transport modes"
+  },
+  "labels": {
+    "destinations": "Destinations: "
+  },
+  "ctaSection": {
+    "title": "Need a tailored solution?",
+    "text": "Every logistics project is unique. Our experts analyze your needs to propose the most suitable and cost-effective solution.",
+    "consultation": "Free Consultation",
+    "whatsapp": "WhatsApp Chat"
+  }
+}

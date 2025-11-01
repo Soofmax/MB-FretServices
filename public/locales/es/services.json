@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "Nuestros Servicios de Transporte Internacional",
+    "subtitle": "Logística internacional integral adaptada a sus necesidades. Desde el transporte marítimo económico hasta el transporte aéreo exprés, gestionamos su carga de principio a fin."
+  },
+  "maritime": {
+    "title": "Transporte Marítimo",
+    "subtitle": "Soluciones económicas para grandes volúmenes",
+    "description": "Nuestra experiencia en transporte marítimo nos permite ofrecer soluciones óptimas para envíos voluminosos a África y Asia. Gestionamos todo tipo de mercancías con seguimiento completo.",
+    "features": [
+      "Contenedores de 20' y 40' (FCL)",
+      "Groupage (LCL) para pequeños volúmenes",
+      "Transporte de vehículos y maquinaria",
+      "Mercancías especiales y peligrosas",
+      "Servicio de puerto a puerto o puerta a puerta",
+      "Seguimiento en tiempo real vía plataforma web"
+    ],
+    "destinations": "Destinos clave: Congo, Angola, Costa de Marfil, Camerún",
+    "more_link": "Más información sobre transporte marítimo"
+  },
+  "air": {
+    "title": "Transporte Aéreo",
+    "subtitle": "Rapidez y fiabilidad para sus urgencias",
+    "description": "El transporte aéreo es ideal para mercancías de alto valor, perecederas o urgentes. Nuestra red de socios garantiza plazos ajustados a todos los destinos.",
+    "features": [
+      "Exprés 24–48h a destinos principales",
+      "Transporte con temperatura controlada",
+      "Mercancías frágiles y de alto valor",
+      "Documentos y muestras",
+      "Seguimiento GPS en tiempo real",
+      "Seguro a todo riesgo incluido"
+    ],
+    "destinations": "Servido: China, Turquía, Marruecos, Túnez, países de África Central"
+  },
+  "customs": {
+    "title": "Despacho de Aduanas",
+    "subtitle": "Experiencia administrativa integral",
+    "description": "Nuestro equipo de agentes aduaneros titulados le acompaña en todos los trámites administrativos. Garantizamos el cumplimiento normativo de sus operaciones.",
+    "features": [
+      "Declaraciones de importación/exportación",
+      "Gestión de regímenes aduaneros especiales",
+      "Asesoramiento en clasificación arancelaria",
+      "Optimización fiscal legal",
+      "Representación en caso de inspección",
+      "Vigilancia normativa continua"
+    ],
+    "destinations": "Todos los puertos y aeropuertos franceses y europeos"
+  },
+  "insurance": {
+    "title": "Seguro de Carga",
+    "subtitle": "Protección total de sus mercancías",
+    "description": "Proteja su inversión con soluciones de seguro adaptadas a cada modo de transporte. Cobertura completa desde la recogida hasta la entrega final.",
+    "features": [
+      "Seguro de transporte a todo riesgo",
+      "Cobertura de guerra y huelgas",
+      "Protección por avería gruesa",
+      "Peritaje y liquidación rápida",
+      "Consejos de prevención de riesgos",
+      "Tarifas preferenciales según volúmenes"
+    ],
+    "destinations": "Cobertura mundial para todos los modos de transporte"
+  },
+  "labels": {
+    "destinations": "Destinos: "
+  },
+  "ctaSection": {
+    "title": "¿Necesita una solución a medida?",
+    "text": "Cada proyecto logístico es único. Nuestros expertos analizan sus necesidades para proponer la solución más adecuada y económica.",
+    "consultation": "Consulta Gratuita",
+    "whatsapp": "Chat de WhatsApp"
+  }
+}

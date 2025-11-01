@@ -1,0 +1,56 @@
+{
+  "valueProps": {
+    "title": "Warum MB Fret Services?",
+    "subtitle": "Wir kombinieren Expertise, Technologie und ein globales Netzwerk, um Transportlösungen zu liefern, die auf Ihre Bedürfnisse zugeschnitten sind.",
+    "items": [
+      {
+        "title": "Seefracht",
+        "description": "Kostengünstige Lösungen für große Sendungen nach Afrika und Asien mit Echtzeit-Tracking.",
+        "features": ["20'- und 40'-Container", "FCL und LCL", "Von Hafen zu Hafen oder Door-to-Door"]
+      },
+      {
+        "title": "Luftfracht",
+        "description": "Schneller und sicherer Transport für dringende und wertvolle Güter.",
+        "features": ["Expresslieferung", "Temperaturgeführt", "Kontinuierliches GPS-Tracking"]
+      },
+      {
+        "title": "Zollabfertigung",
+        "description": "Umfassende Expertise in Zollverfahren zur Erleichterung Ihres internationalen Handels.",
+        "features": ["Zollanmeldungen", "Regulatorische Compliance", "Administrative Unterstützung"]
+      }
+    ]
+  },
+  "destinations_title": "Unsere Hauptziele",
+  "destinations_subtitle": "Wir bedienen die wichtigsten globalen Märkte mit Lösungen, die auf jede Region und Frachtart zugeschnitten sind.",
+  "destinations_more": "Alle Ziele ansehen",
+  "destinations_need_specific": "Benötigen Sie ein bestimmtes Ziel? Wir prüfen alle Anfragen.",
+  "showcase": [
+    {
+      "country": "Kongo",
+      "city": "Pointe-Noire",
+      "image": "https://images.pexels.com/photos/5668842/pexels-photo-5668842.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Seefracht ab Le Havre", "Luftfracht ab Paris CDG"]
+    },
+    {
+      "country": "Angola",
+      "city": "Luanda",
+      "image": "https://images.pexels.com/photos/9638839/pexels-photo-9638839.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Seefracht ab Antwerpen", "Luftfracht ab Marseille"]
+    },
+    {
+      "country": "China",
+      "city": "Shanghai",
+      "image": "https://images.pexels.com/photos/2412603/pexels-photo-2412603.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Transpazifische Seeroute", "Direkte Luftverbindung"]
+    },
+    {
+      "country": "Türkei",
+      "city": "Istanbul",
+      "image": "https://images.pexels.com/photos/1723637/pexels-photo-1723637.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Straßentransport", "Luftfracht ab Lyon"]
+    }
+  ],
+  "final_cta_title": "Bereit, Ihre Waren zu versenden?",
+  "final_cta_text": "Erhalten Sie innerhalb von 24 Stunden ein individuelles Angebot. Unsere Experten begleiten Sie bei jedem Schritt Ihres Logistikprojekts.",
+  "whatsapp": "Kontakt per WhatsApp"
+}

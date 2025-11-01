@@ -11,7 +11,15 @@ const LANGS = [
   { code: 'fr', label: 'FR' },
   { code: 'en', label: 'EN' },
   { code: 'pt', label: 'PT' },
+  { code: 'es', label: 'ES' },
+  { code: 'ar', label: 'AR' },
+  { code: 'tr', label: 'TR' },
+  { code: 'de', label: 'DE' },
+  { code: 'it', label: 'IT' },
+  { code: 'sw', label: 'SW' },
 ];
+
+const SUP = ['fr','en','pt','es','ar','tr','sw','de','it'] as const;
 
 const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +27,7 @@ const Navbar: FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const params = useParams();
-  const currentLang = params.lng && ['fr', 'en', 'pt'].includes(params.lng) ? params.lng : 'fr';
+  const currentLang = params.lng && (SUP as readonly string[]).includes(params.lng) ? params.lng : 'fr';
   const { t } = useTranslation(['navbar', 'common']);
 
   useEffect(() => {
@@ -54,14 +62,14 @@ const Navbar: FC = () => {
   ];
 
   const isActiveLink = (href: string) => {
-    const lang = (currentLang as 'fr' | 'en' | 'pt');
-    const localized = localizeTo(href, lang);
+    const lang = (currentLang || 'fr') as typeof SUP[number];
+    const localized = localizeTo(href, lang as any);
     return location.pathname === localized;
   };
 
   const onLanguageChange = (lng: string) => {
     const parts = location.pathname.split('/');
-    if (parts.length > 1 && ['fr', 'en', 'pt'].includes(parts[1])) {
+    if (parts.length > 1 && (SUP as readonly string[]).includes(parts[1])) {
       parts[1] = lng;
       const target = parts.join('/') || `/${lng}`;
       navigate(target, { replace: true });
@@ -146,7 +154,7 @@ const Navbar: FC = () => {
               aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
               className="inline-flex items-center justify-center p-2 rounded-md text-primary-700 hover:text-accent-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-accent-500"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
             </button>
           </div>
         </div>

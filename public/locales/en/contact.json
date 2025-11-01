@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "Contact Our Experts",
+    "subtitle": "Need a quote or advice? Our team replies within 24 hours. Let's discuss your logistics project."
+  },
+  "methods": {
+    "email": "Email",
+    "email_hint": "Reply within 24h guaranteed",
+    "phone": "Phone",
+    "phone_hours": "Mon–Fri 9am–6pm",
+    "whatsapp": "WhatsApp",
+    "whatsapp_hint": "Instant reply",
+    "office": "Office",
+    "office_city": "Paris, France",
+    "office_hint": "By appointment",
+    "chat_direct": "Direct Chat"
+  },
+  "guide": {
+    "title": "How to get your quote?",
+    "intro": "To propose the best solution, we need a few details about your project.",
+    "info_title": "Required information",
+    "items": [
+      { "title": "Type of goods:", "desc": "Nature, weight, dimensions, value" },
+      { "title": "Origin and destination:", "desc": "Exact pickup and delivery addresses" },
+      { "title": "Desired timeline:", "desc": "Shipping and reception dates" },
+      { "title": "Additional services:", "desc": "Insurance, customs clearance, delivery" }
+    ],
+    "commitment_title": "Our commitment",
+    "commitment": [
+      { "title": "Fast reply:", "desc": "Detailed quote within 24 business hours" },
+      { "title": "Full transparency:", "desc": "All fees detailed, no surprises" },
+      { "title": "Expert advice:", "desc": "Optimal solutions for your budget" },
+      { "title": "Personalized follow-up:", "desc": "A dedicated contact for your project" }
+    ]
+  },
+  "cta": {
+    "title": "Ready to start your project?",
+    "text": "Our experts are available to analyze your needs and propose the most suitable logistics solution.",
+    "email": "Send an Email",
+    "whatsapp": "WhatsApp Direct",
+    "call": "Call Now"
+  }
+}

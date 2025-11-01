@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "Küresel Destinasyonlarımız",
+    "subtitle": "Pazarlarınızı birbirine bağlamak için geniş lojistik iş ortağı ağı. İş ihtiyaçlarınıza uygun optimize rotalar ve sefer sıklıkları."
+  },
+  "labels": {
+    "port_principal": "Ana liman:",
+    "depart": "Kalkış:",
+    "duree": "Süre:",
+    "frequence": "Sıklık:",
+    "maritime": "Deniz Taşımacılığı",
+    "air": "Hava Taşımacılığı",
+    "specialites": "Taşıma uzmanlıkları:"
+  },
+  "regions": [
+    {
+      "name": "Orta Afrika",
+      "countries": [
+        {
+          "name": "Kongo",
+          "capital": "Brazzaville",
+          "port": "Pointe-Noire",
+          "maritime": { "from": "Le Havre, Anvers", "duration": "18–22 gün", "frequency": "Haftalık" },
+          "aerien": { "from": "Paris CDG, Lyon", "duration": "6–8 saat", "frequency": "Günlük" },
+          "specialites": ["Araçlar", "Endüstriyel makineler", "Gıda ürünleri"]
+        },
+        {
+          "name": "Angola",
+          "capital": "Luanda",
+          "port": "Luanda",
+          "maritime": { "from": "Anvers, Rotterdam", "duration": "20–25 gün", "frequency": "Haftada iki kez" },
+          "aerien": { "from": "Paris CDG, Marsilya", "duration": "7–9 saat", "frequency": "Haftada 5 kez" },
+          "specialites": ["Tıbbi ekipman", "İnşaat", "Elektronik"]
+        }
+      ]
+    },
+    {
+      "name": "Asya",
+      "countries": [
+        {
+          "name": "Çin",
+          "capital": "Pekin",
+          "port": "Şanghay, Shenzhen",
+          "maritime": { "from": "Le Havre, Hamburg", "duration": "30–35 gün", "frequency": "Günlük" },
+          "aerien": { "from": "Paris CDG, Lyon", "duration": "10–12 saat", "frequency": "Günlük" },
+          "specialites": ["Tekstil ithalatı", "Elektronik", "Makineler"]
+        }
+      ]
+    },
+    {
+      "name": "Orta Doğu",
+      "countries": [
+        {
+          "name": "Türkiye",
+          "capital": "Ankara",
+          "port": "İstanbul, İzmir",
+          "maritime": { "from": "Marsilya, Cenova", "duration": "5–7 gün", "frequency": "Haftada 3 kez" },
+          "aerien": { "from": "Paris CDG, Lyon, Nice", "duration": "3–4 saat", "frequency": "Günlük" },
+          "specialites": ["Tekstil", "Gıda", "Otomotiv"]
+        }
+      ]
+    }
+  ],
+  "other": {
+    "not_listed_title": "Listede olmayan destinasyon mu?",
+    "not_listed_text": "Küresel ağımız sayesinde her destinasyonu değerlendirebiliriz. Projeniz için kişisel bir değerlendirme almak üzere bize ulaşın.",
+    "fast_response": "Hızlı Yanıt",
+    "fast_response_desc": "Her destinasyon için 24 saat içinde teklif",
+    "global_network": "Küresel Ağ",
+    "global_network_desc": "50'den fazla ülkede iş ortakları",
+    "tailored": "Özel Çözümler",
+    "tailored_desc": "Özel gereksinimlerinize uyarlanmış",
+    "cta_study": "Destinasyonumu Değerlendir",
+    "cta_whatsapp": "Doğrudan WhatsApp",
+    "cta_for": "{{country}} için Teklif Al"
+  }
+}

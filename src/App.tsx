@@ -10,7 +10,7 @@ import LangLayout from './components/LangLayout';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         {/* Default language redirect */}
         <Route path="/" element={<Navigate to="/fr" replace />} />

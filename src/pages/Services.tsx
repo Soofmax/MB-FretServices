@@ -10,7 +10,7 @@ import { detectLangFromPath, pathForLang } from '../utils/paths';
 type ServiceKey = 'maritime' | 'air' | 'customs' | 'insurance';
 
 const Services: FC = () => {
-  const { t } = useTranslation('services');
+  const { t } = useTranslation(['services', 'common']);
   const lang = typeof window !== 'undefined' ? detectLangFromPath(window.location.pathname) : 'fr';
 
   const serviceDefs: Array<{ icon: ComponentType<{ size?: number | string; className?: string }>; key: ServiceKey }> = [
@@ -92,7 +92,7 @@ const Services: FC = () => {
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                     <div className="flex items-center mb-6">
                       <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-accent-400 to-accent-600 rounded-xl mr-4">
-                        <Icon size={32} className="text-white" />
+                        <Icon size={32} className="text-white" aria-hidden="true" />
                       </div>
                       <div>
                         <h2 className="text-3xl font-bold text-primary-900">{title}</h2>
@@ -124,7 +124,7 @@ const Services: FC = () => {
                       <div className="mb-6">
                         <LocalizedLink to="services/fret-maritime" className="inline-flex items-center text-accent-600 hover:text-accent-700 font-medium">
                           {t('maritime.more_link')}
-                          <ArrowRight size={16} className="ml-1" />
+                          <ArrowRight size={16} className="ml-1" aria-hidden="true" />
                         </LocalizedLink>
                       </div>
                     )}
@@ -149,6 +149,8 @@ const Services: FC = () => {
                         alt={`Service ${title}`}
                         loading="lazy"
                         decoding="async"
+                        width={800}
+                        height={533}
                         className="w-full h-64 lg:h-80 object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-primary-900/30 to-transparent"></div>

@@ -1,0 +1,51 @@
+{
+  "page_title": "Legal Notice",
+  "sections": {
+    "info": {
+      "heading": "Legal Information",
+      "labels": {
+        "raison_sociale": "Company name",
+        "forme_juridique": "Legal form",
+        "capital_social": "Share capital",
+        "siege_social": "Registered office",
+        "siret": "SIRET",
+        "code_ape": "APE code"
+      }
+    },
+    "contact": {
+      "heading": "Contact",
+      "labels": {
+        "telephone": "Phone",
+        "email": "Email",
+        "adresse": "Address"
+      }
+    },
+    "hosting": {
+      "heading": "Hosting",
+      "content_line1": "This site is hosted by [Hosting provider name]",
+      "content_line2": "[Hosting provider address]"
+    },
+    "ip": {
+      "heading": "Intellectual Property",
+      "content": "This site as a whole is subject to French and international legislation on copyright and intellectual property. All reproduction rights are reserved."
+    },
+    "terms": {
+      "heading": "Terms of Use",
+      "content": "Using this site implies full acceptance of the general terms of use described below. These terms of use may be modified or supplemented at any time."
+    },
+    "privacy": {
+      "heading": "Personal Data Protection",
+      "content1": "In accordance with the amended French Data Protection Act of January 6, 1978 and the General Data Protection Regulation (GDPR), you have the right to access, rectify, port and delete your personal data.",
+      "content2": "To exercise these rights, please contact us at: contact@mb-fretservices.com"
+    },
+    "cookies": {
+      "heading": "Cookies",
+      "content": "This site uses cookies to improve user experience and produce visit statistics. By continuing to browse, you accept the use of these cookies."
+    },
+    "liability": {
+      "heading": "Liability",
+      "content": "MB Fret Services strives to provide information that is as accurate as possible. However, it cannot be held liable for omissions, inaccuracies and failures to update, whether of its own doing or that of third-party partners providing the information."
+    },
+    "last_update": "Last update: {{date}}"
+  }
+}

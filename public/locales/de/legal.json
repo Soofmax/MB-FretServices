@@ -1,0 +1,51 @@
+{
+  "page_title": "Impressum",
+  "sections": {
+    "info": {
+      "heading": "Rechtliche Informationen",
+      "labels": {
+        "raison_sociale": "Firmenname",
+        "forme_juridique": "Rechtsform",
+        "capital_social": "Stammkapital",
+        "siege_social": "Sitz",
+        "siret": "SIRET",
+        "code_ape": "APE-Code"
+      }
+    },
+    "contact": {
+      "heading": "Kontakt",
+      "labels": {
+        "telephone": "Telefon",
+        "email": "E-Mail",
+        "adresse": "Adresse"
+      }
+    },
+    "hosting": {
+      "heading": "Hosting",
+      "content_line1": "Diese Website wird betrieben von [Name des Hosters]",
+      "content_line2": "[Adresse des Hosters]"
+    },
+    "ip": {
+      "heading": "Geistiges Eigentum",
+      "content": "Diese Website unterliegt dem französischen und internationalen Urheber- und Immaterialgüterrecht. Alle Rechte vorbehalten."
+    },
+    "terms": {
+      "heading": "Nutzungsbedingungen",
+      "content": "Die Nutzung dieser Website setzt die vollständige Anerkennung der nachstehenden allgemeinen Nutzungsbedingungen voraus. Diese können jederzeit geändert oder ergänzt werden."
+    },
+    "privacy": {
+      "heading": "Schutz personenbezogener Daten",
+      "content1": "Gemäß dem geänderten französischen Datenschutzgesetz vom 6. Januar 1978 und der Datenschutz-Grundverordnung (DSGVO) haben Sie das Recht auf Auskunft, Berichtigung, Übertragbarkeit und Löschung Ihrer personenbezogenen Daten.",
+      "content2": "Zur Ausübung dieser Rechte kontaktieren Sie uns bitte unter: contact@mb-fretservices.com"
+    },
+    "cookies": {
+      "heading": "Cookies",
+      "content": "Diese Website verwendet Cookies zur Verbesserung der Benutzererfahrung und zur Erstellung von Besuchsstatistiken. Durch das weitere Browsen akzeptieren Sie die Verwendung dieser Cookies."
+    },
+    "liability": {
+      "heading": "Haftung",
+      "content": "MB Fret Services ist bemüht, möglichst genaue Informationen bereitzustellen. Dennoch kann keine Haftung für Auslassungen, Ungenauigkeiten oder Aktualisierungsfehler übernommen werden, sei es eigener Art oder verursacht durch Partner, die Informationen liefern."
+    },
+    "last_update": "Letzte Aktualisierung: {{date}}"
+  }
+}

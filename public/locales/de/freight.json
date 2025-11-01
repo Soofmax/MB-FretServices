@@ -1,0 +1,66 @@
+{
+  "seo": {
+    "title": "Seefracht nach Afrika – FCL LCL Containertransport | MB Fret Services",
+    "description": "Professionelle Seefracht nach Afrika: Kongo, Angola, Elfenbeinküste. 20'- und 40'-Container, FCL und LCL. Kostenloses Angebot innerhalb von 24 h. 15 Jahre Expertise."
+  },
+  "hero": {
+    "title": "Seefracht nach Afrika",
+    "subtitle": "FCL- und LCL-Containerlösungen",
+    "intro": "Professioneller Seetransport zu den wichtigsten afrikanischen Häfen. 20'- und 40'-Container, LCL-Groupage, Fahrzeuge und Spezialgüter. Regelmäßige Rotationen ab französischen und europäischen Häfen.",
+    "cta_quote": "Kostenloses Seefracht-Angebot",
+    "cta_whatsapp": "WhatsApp Direkt"
+  },
+  "why": {
+    "title": "Warum unsere Seefracht?",
+    "subtitle": "Anerkannte Expertise im Seetransport nach Afrika – mit Lösungen für all Ihre Anforderungen."
+  },
+  "advantages": [
+    { "title": "Maritime Expertise", "description": "Über 15 Jahre Erfahrung im Seetransport nach Afrika" },
+    { "title": "Kontrollierte Laufzeiten", "description": "Regelmäßige Rotationen und optimierte Transitzeiten" },
+    { "title": "Garantierte Sicherheit", "description": "Frachtversicherung und Echtzeit-Tracking Ihrer Güter" }
+  ],
+  "services": {
+    "title": "Unsere Seefracht-Leistungen",
+    "subtitle": "Umfassende maritime Lösungen für alle Frachtarten. Von Abholung bis Zustellung – wir managen Ihre Sendung von A bis Z.",
+    "list": [
+      "20'- und 40'-Container (FCL – Full Container Load)",
+      "Maritime Sammelladung (LCL – Less than Container Load)",
+      "Transport von Neu- und Gebrauchtfahrzeugen",
+      "Industriemaschinen und Schwergut",
+      "Gefahrgut (IMO)",
+      "Kühlcontainer (Reefer)",
+      "Door-to-Door mit Abholung",
+      "Zollabfertigung Import/Export inklusive"
+    ],
+    "cta": "Individuelles Angebot anfordern"
+  },
+  "destinations": {
+    "title": "Seefracht-Destinationen – Afrika",
+    "subtitle": "Regelmäßige Rotationen zu den wichtigsten afrikanischen Häfen mit optimierten Laufzeiten.",
+    "label_duration": "Transitzeit",
+    "label_frequency": "Frequenz",
+    "label_departure": "Abfahrt ab",
+    "cta_prefix": "Angebot nach "
+  },
+  "destinations_list": [
+    { "country": "Kongo", "port": "Pointe-Noire", "duration": "18–22 Tage", "frequency": "Wöchentlich", "departure": "Le Havre, Antwerpen" },
+    { "country": "Angola", "port": "Luanda", "duration": "20–25 Tage", "frequency": "Zweiwöchentlich", "departure": "Antwerpen, Rotterdam" },
+    { "country": "Elfenbeinküste", "port": "Abidjan", "duration": "12–15 Tage", "frequency": "Täglich", "departure": "Le Havre, Marseille" },
+    { "country": "Kamerun", "port": "Douala", "duration": "15–18 Tage", "frequency": "Zweiwöchentlich", "departure": "Antwerpen, Hamburg" }
+  ],
+  "faq": {
+    "title": "Häufige Fragen – Seefracht",
+    "q1": "Was ist der Unterschied zwischen FCL und LCL?",
+    "a1": "FCL (Full Container Load): Sie mieten einen kompletten Container (20' oder 40') ausschließlich für Ihre Güter. LCL (Less than Container Load): Ihre Güter teilen sich einen Container mit anderen Versendern, ideal für kleine Volumen.",
+    "q2": "Welche Dokumente sind für Seefracht erforderlich?",
+    "a2": "Handelsrechnung, Packliste, Konnossement (Bill of Lading), ggf. Ursprungszeugnis sowie je nach Art der Waren spezifische Dokumente (Gesundheitszertifikate usw.).",
+    "q3": "Wie verfolge ich meinen Container während des Transits?",
+    "a3": "Wir stellen eine Trackingnummer und Zugang zu unserer Webplattform bereit – für Echtzeit-Tracking vom Verladehafen bis zum Zielhafen."
+  },
+  "final": {
+    "title": "Bereit für den Versand per Seeweg?",
+    "text": "Erhalten Sie Ihr individuelles Angebot innerhalb von 24 Stunden. Unsere Experten analysieren Ihren Bedarf und schlagen die wirtschaftlichste maritime Lösung vor.",
+    "cta": "Seefracht-Angebot",
+    "whatsapp": "WhatsApp sofort"
+  }
+}

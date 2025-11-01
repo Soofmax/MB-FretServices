@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "Huduma zetu za Usafiri wa Kimataifa",
+    "subtitle": "Vifaa vya kimataifa kutoka mwanzo hadi mwisho vilivyobinafsishwa kwa mahitaji yako. Kuanzia usafiri wa baharini wa gharama nafuu hadi usafiri wa anga wa haraka – tunasimamia shehena yako kutoka A hadi Z."
+  },
+  "maritime": {
+    "title": "Usafiri wa Baharini",
+    "subtitle": "Suluhisho za gharama nafuu kwa kiasi kikubwa",
+    "description": "Utaalamu wetu wa usafiri wa baharini hutuwezesha kutoa suluhisho bora kwa usafirishaji wa kiasi kikubwa kuelekea Afrika na Asia. Tunasimamia aina zote za mizigo kwa ufuatiliaji kamili.",
+    "features": [
+      "Kontena za 20' na 40' (FCL)",
+      "Groupage (LCL) kwa kiasi kidogo",
+      "Usafirishaji wa magari na mashine",
+      "Mizigo maalum na hatarishi",
+      "Huduma ya bandari hadi bandari au mlangoni hadi mlangoni",
+      "Ufuatiliaji wa wakati halisi kupitia jukwaa la wavuti"
+    ],
+    "destinations": "Vituo vikuu: Kongo, Angola, Ivory Coast, Cameroon",
+    "more_link": "Zaidi kuhusu usafiri wa baharini"
+  },
+  "air": {
+    "title": "Usafiri wa Anga",
+    "subtitle": "Kasi na uaminifu kwa dharura zako",
+    "description": "Usafiri wa anga ni bora kwa mizigo ya thamani kubwa, inayoharibika au ya dharura. Mtandao wetu wa washirika unahakikisha muda mfupi wa utoaji kuelekea vituo vyote.",
+    "features": [
+      "Express 24–48 h kwa vituo vya msingi",
+      "Usafiri wenye udhibiti wa joto",
+      "Mizigo dhaifu na ya thamani kubwa",
+      "Nyaraka na sampuli",
+      "Ufuatiliaji wa GPS wa wakati halisi",
+      "Bima ya hatari zote imejumuishwa"
+    ],
+    "destinations": "Inahudumiwa: China, Uturuki, Morocco, Tunisia, nchi za Afrika ya Kati"
+  },
+  "customs": {
+    "title": "Ushuru wa Forodha",
+    "subtitle": "Utaalamu kamili wa kiutawala",
+    "description": "Timu yetu ya mawakala wa forodha iliyoidhinishwa itakuongoza katika taratibu zote za kiutawala. Tunahakikisha ulinganifu wa kanuni kwa shughuli zako.",
+    "features": [
+      "Matamko ya uagizaji/uuzaji nje",
+      "Usimamizi wa taratibu maalum za forodha",
+      "Ushauri wa uainishaji wa ushuru",
+      "Uboreshaji wa kodi unaozingatia sheria",
+      "Uwakilishi endapo kutakuwa na ukaguzi",
+      "Ufuatiliaji endelevu wa kanuni"
+    ],
+    "destinations": "Bandari na viwanja vyote vya ndege vya Ufaransa na Ulaya"
+  },
+  "insurance": {
+    "title": "Bima ya Mizigo",
+    "subtitle": "Ulinzi kamili kwa bidhaa zako",
+    "description": "Linda uwekezaji wako kwa suluhisho za bima zinazofaa kila njia ya usafiri. Kinga kamili kuanzia ukusanyaji hadi utoaji wa mwisho.",
+    "features": [
+      "Bima ya usafiri ya hatari zote",
+      "Ufunikaji wa vita na migomo",
+      "Ulinzi wa hasara ya pamoja (general average)",
+      "Utaalamu na ulipaji wa haraka",
+      "Ushauri wa kuzuia hatari",
+      "Bei maalum kulingana na kiasi"
+    ],
+    "destinations": "Ufunikaji wa dunia nzima kwa njia zote za usafiri"
+  },
+  "labels": {
+    "destinations": "Vituo: "
+  },
+  "ctaSection": {
+    "title": "Unahitaji suluhisho maalum?",
+    "text": "Kila mradi wa vifaa ni wa kipekee. Wataalamu wetu huchambua mahitaji yako ili kupendekeza suluhisho linalofaa na la kiuchumi zaidi.",
+    "consultation": "Ushauri Bure",
+    "whatsapp": "Chat ya WhatsApp"
+  }
+}

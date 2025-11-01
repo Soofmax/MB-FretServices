@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "Our Global Destinations",
+    "subtitle": "Extensive network of logistics partners to connect your markets. Optimized routes and frequencies adapted to your business needs."
+  },
+  "labels": {
+    "port_principal": "Main port:",
+    "depart": "Departure:",
+    "duree": "Duration:",
+    "frequence": "Frequency:",
+    "maritime": "Sea Transport",
+    "air": "Air Transport",
+    "specialites": "Transport specialties:"
+  },
+  "regions": [
+    {
+      "name": "Central Africa",
+      "countries": [
+        {
+          "name": "Congo",
+          "capital": "Brazzaville",
+          "port": "Pointe-Noire",
+          "maritime": { "from": "Le Havre, Antwerp", "duration": "18–22 days", "frequency": "Weekly" },
+          "aerien": { "from": "Paris CDG, Lyon", "duration": "6–8 hours", "frequency": "Daily" },
+          "specialites": ["Vehicles", "Industrial machinery", "Food products"]
+        },
+        {
+          "name": "Angola",
+          "capital": "Luanda",
+          "port": "Luanda",
+          "maritime": { "from": "Antwerp, Rotterdam", "duration": "20–25 days", "frequency": "Bi-weekly" },
+          "aerien": { "from": "Paris CDG, Marseille", "duration": "7–9 hours", "frequency": "5x/week" },
+          "specialites": ["Medical equipment", "Construction", "Electronics"]
+        }
+      ]
+    },
+    {
+      "name": "Asia",
+      "countries": [
+        {
+          "name": "China",
+          "capital": "Beijing",
+          "port": "Shanghai, Shenzhen",
+          "maritime": { "from": "Le Havre, Hamburg", "duration": "30–35 days", "frequency": "Daily" },
+          "aerien": { "from": "Paris CDG, Lyon", "duration": "10–12 hours", "frequency": "Daily" },
+          "specialites": ["Textile import", "Electronics", "Machinery"]
+        }
+      ]
+    },
+    {
+      "name": "Middle East",
+      "countries": [
+        {
+          "name": "Turkey",
+          "capital": "Ankara",
+          "port": "Istanbul, Izmir",
+          "maritime": { "from": "Marseille, Genoa", "duration": "5–7 days", "frequency": "3x/week" },
+          "aerien": { "from": "Paris CDG, Lyon, Nice", "duration": "3–4 hours", "frequency": "Daily" },
+          "specialites": ["Textile", "Agri-food", "Automotive"]
+        }
+      ]
+    }
+  ],
+  "other": {
+    "not_listed_title": "Destination not listed?",
+    "not_listed_text": "Our global network allows us to consider any destination. Contact us for a personalized assessment of your project.",
+    "fast_response": "Fast Response",
+    "fast_response_desc": "Quote within 24h for any destination",
+    "global_network": "Global Network",
+    "global_network_desc": "Partners in over 50 countries",
+    "tailored": "Tailor-made Solutions",
+    "tailored_desc": "Adapted to your specific constraints",
+    "cta_study": "Assess my Destination",
+    "cta_whatsapp": "WhatsApp Direct",
+    "cta_for": "Request a Quote for {{country}}"
+  }
+}

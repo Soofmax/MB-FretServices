@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "Vituo vyetu vya Ulimwengu",
+    "subtitle": "Mtandao mpana wa washirika wa vifaa ili kuunganisha masoko yako. Njia zilizoboreshwa na marudio yanayolingana na mahitaji ya biashara yako."
+  },
+  "labels": {
+    "port_principal": "Bandari kuu:",
+    "depart": "Kutoka:",
+    "duree": "Muda:",
+    "frequence": "Marudio:",
+    "maritime": "Usafiri wa Baharini",
+    "air": "Usafiri wa Anga",
+    "specialites": "Umaalumu wa usafiri:"
+  },
+  "regions": [
+    {
+      "name": "Afrika ya Kati",
+      "countries": [
+        {
+          "name": "Kongo",
+          "capital": "Brazzaville",
+          "port": "Pointe-Noire",
+          "maritime": { "from": "Le Havre, Antwerp", "duration": "Siku 18–22", "frequency": "Kila wiki" },
+          "aerien": { "from": "Paris CDG, Lyon", "duration": "Saa 6–8", "frequency": "Kila siku" },
+          "specialites": ["Magari", "Mashine za viwandani", "Bidhaa za chakula"]
+        },
+        {
+          "name": "Angola",
+          "capital": "Luanda",
+          "port": "Luanda",
+          "maritime": { "from": "Antwerp, Rotterdam", "duration": "Siku 20–25", "frequency": "Mara mbili kwa wiki" },
+          "aerien": { "from": "Paris CDG, Marseille", "duration": "Saa 7–9", "frequency": "Mara 5 kwa wiki" },
+          "specialites": ["Vifaa vya matibabu", "Ujenzi", "Elektroniki"]
+        }
+      ]
+    },
+    {
+      "name": "Asia",
+      "countries": [
+        {
+          "name": "China",
+          "capital": "Beijing",
+          "port": "Shanghai, Shenzhen",
+          "maritime": { "from": "Le Havre, Hamburg", "duration": "Siku 30–35", "frequency": "Kila siku" },
+          "aerien": { "from": "Paris CDG, Lyon", "duration": "Saa 10–12", "frequency": "Kila siku" },
+          "specialites": ["Uagizaji wa nguo", "Elektroniki", "Mashine"]
+        }
+      ]
+    },
+    {
+      "name": "Mashariki ya Kati",
+      "countries": [
+        {
+          "name": "Uturuki",
+          "capital": "Ankara",
+          "port": "Istanbul, Izmir",
+          "maritime": { "from": "Marseille, Genoa", "duration": "Siku 5–7", "frequency": "Mara 3 kwa wiki" },
+          "aerien": { "from": "Paris CDG, Lyon, Nice", "duration": "Saa 3–4", "frequency": "Kila siku" },
+          "specialites": ["Nguo", "Chakula na kilimo", "Magari"]
+        }
+      ]
+    }
+  ],
+  "other": {
+    "not_listed_title": "Kituo hakijaorodheshwa?",
+    "not_listed_text": "Mtandao wetu wa kimataifa hutuwezesha kuzingatia kituo chochote. Wasiliana nasi kwa tathmini ya kibinafsi ya mradi wako.",
+    "fast_response": "Majibu ya Haraka",
+    "fast_response_desc": "Nukuu ndani ya saa 24 kwa kituo chochote",
+    "global_network": "Mtandao wa Ulimwengu",
+    "global_network_desc": "Washirika katika zaidi ya nchi 50",
+    "tailored": "Suluhisho Maalum",
+    "tailored_desc": "Zimebinafsishwa kwa mahitaji yako maalum",
+    "cta_study": "Tathmini Kituo Changu",
+    "cta_whatsapp": "WhatsApp Moja kwa Moja",
+    "cta_for": "Omba Nukuu kwa {{country}}"
+  }
+}

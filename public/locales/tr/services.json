@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "Uluslararası Taşımacılık Hizmetlerimiz",
+    "subtitle": "İhtiyaçlarınıza göre uçtan uca uluslararası lojistik. Ekonomik deniz taşımacılığından ekspres hava taşımacılığına kadar yükünüzü A'dan Z'ye yönetiyoruz."
+  },
+  "maritime": {
+    "title": "Deniz Taşımacılığı",
+    "subtitle": "Büyük hacimler için ekonomik çözümler",
+    "description": "Deniz taşımacılığındaki uzmanlığımız, Afrika ve Asya'ya büyük hacimli gönderileriniz için en uygun çözümleri sunmamızı sağlar. Tüm kargo türlerini tam takip ile yönetiyoruz.",
+    "features": [
+      "20' ve 40' konteynerler (FCL)",
+      "Küçük hacimler için grupaj (LCL)",
+      "Araç ve makine taşımacılığı",
+      "Özel ve tehlikeli yükler",
+      "Limandan limana veya kapıdan kapıya hizmet",
+      "Web platformu üzerinden gerçek zamanlı takip"
+    ],
+    "destinations": "Başlıca destinasyonlar: Kongo, Angola, Fildişi Sahili, Kamerun",
+    "more_link": "Deniz taşımacılığı hakkında daha fazlası"
+  },
+  "air": {
+    "title": "Hava Taşımacılığı",
+    "subtitle": "Acil gönderiler için hız ve güvenilirlik",
+    "description": "Hava taşımacılığı, yüksek değerli, hassas veya acil kargolar için idealdir. İş ortaklarımızın ağı tüm destinasyonlara kısa sürelerde teslimat sağlar.",
+    "features": [
+      "Başlıca destinasyonlara 24–48 saatte ekspres",
+      "Sıcaklık kontrollü taşıma",
+      "Kırılgan ve yüksek değerli kargolar",
+      "Belgeler ve numuneler",
+      "Gerçek zamanlı GPS takibi",
+      "Tüm risklere karşı sigorta dahil"
+    ],
+    "destinations": "Hizmet verilen: Çin, Türkiye, Fas, Tunus, Orta Afrika ülkeleri"
+  },
+  "customs": {
+    "title": "Gümrükleme",
+    "subtitle": "Kapsamlı idari uzmanlık",
+    "description": "Lisanslı gümrük müşavirlerinden oluşan ekibimiz tüm idari işlemlerde yanınızdadır. Operasyonlarınızın mevzuata uygunluğunu garanti ederiz.",
+    "features": [
+      "İthalat/ihracat beyanları",
+      "Özel gümrük rejimlerinin yönetimi",
+      "Tarife sınıflandırması danışmanlığı",
+      "Yasal vergi optimizasyonu",
+      "Kontrol durumunda temsil",
+      "Sürekli mevzuat takibi"
+    ],
+    "destinations": "Tüm Fransız ve Avrupa liman ve havaalanları"
+  },
+  "insurance": {
+    "title": "Kargo Sigortası",
+    "subtitle": "Yükleriniz için tam koruma",
+    "description": "Her taşıma moduna uygun sigorta çözümleriyle yatırımınızı koruyun. Alımdan son teslimata kadar tam kapsam.",
+    "features": [
+      "Tüm risklere karşı taşıma sigortası",
+      "Savaş ve grev kapsamı",
+      "Ortak avarya koruması",
+      "Uzmanlık ve hızlı hasar ödemesi",
+      "Risk önleme danışmanlığı",
+      "Hacme bağlı avantajlı tarifeler"
+    ],
+    "destinations": "Tüm taşıma modlarında dünya çapında kapsam"
+  },
+  "labels": {
+    "destinations": "Destinasyonlar: "
+  },
+  "ctaSection": {
+    "title": "Özel bir çözüme mi ihtiyacınız var?",
+    "text": "Her lojistik projesi benzersizdir. Uzmanlarımız ihtiyaçlarınızı analiz ederek en uygun ve ekonomik çözümü önerir.",
+    "consultation": "Ücretsiz Danışmanlık",
+    "whatsapp": "WhatsApp Sohbet"
+  }
+}

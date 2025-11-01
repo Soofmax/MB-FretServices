@@ -1,0 +1,56 @@
+{
+  "valueProps": {
+    "title": "Perché scegliere MB Fret Services?",
+    "subtitle": "Combiniamo esperienza, tecnologia e una rete globale per offrire soluzioni di trasporto su misura per le tue esigenze.",
+    "items": [
+      {
+        "title": "Trasporto Marittimo",
+        "description": "Soluzioni economiche per spedizioni voluminose verso Africa e Asia con tracciamento in tempo reale.",
+        "features": ["Container 20' e 40'", "FCL e LCL", "Da porto a porto o porta a porta"]
+      },
+      {
+        "title": "Trasporto Aereo",
+        "description": "Trasporto rapido e sicuro per merci urgenti e di alto valore.",
+        "features": ["Consegna espressa", "Temperatura controllata", "Tracciamento GPS continuo"]
+      },
+      {
+        "title": "Sdoganamento",
+        "description": "Competenza completa nelle procedure doganali per facilitare il tuo commercio internazionale.",
+        "features": ["Dichiarazioni doganali", "Conformità normativa", "Supporto amministrativo"]
+      }
+    ]
+  },
+  "destinations_title": "Le nostre Destinazioni Principali",
+  "destinations_subtitle": "Serviamo i principali mercati globali con soluzioni adatte a ogni regione e tipo di merce.",
+  "destinations_more": "Vedi tutte le destinazioni",
+  "destinations_need_specific": "Hai bisogno di una destinazione specifica? Valutiamo tutte le richieste.",
+  "showcase": [
+    {
+      "country": "Congo",
+      "city": "Pointe-Noire",
+      "image": "https://images.pexels.com/photos/5668842/pexels-photo-5668842.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Marittimo da Le Havre", "Aereo da Parigi CDG"]
+    },
+    {
+      "country": "Angola",
+      "city": "Luanda",
+      "image": "https://images.pexels.com/photos/9638839/pexels-photo-9638839.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Marittimo da Anversa", "Aereo da Marsiglia"]
+    },
+    {
+      "country": "Cina",
+      "city": "Shanghai",
+      "image": "https://images.pexels.com/photos/2412603/pexels-photo-2412603.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Rotta marittima transpacifica", "Aereo diretto"]
+    },
+    {
+      "country": "Turchia",
+      "city": "Istanbul",
+      "image": "https://images.pexels.com/photos/1723637/pexels-photo-1723637.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Trasporto su strada", "Aereo da Lione"]
+    }
+  ],
+  "final_cta_title": "Pronto a spedire le tue merci?",
+  "final_cta_text": "Ottieni un preventivo personalizzato in meno di 24 ore. I nostri esperti ti accompagnano in ogni fase del progetto logistico.",
+  "whatsapp": "Contattaci su WhatsApp"
+}

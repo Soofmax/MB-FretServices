@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "Kontaktieren Sie unsere Experten",
+    "subtitle": "Benötigen Sie ein Angebot oder Beratung? Unser Team antwortet innerhalb von 24 Stunden. Sprechen wir über Ihr Logistikprojekt."
+  },
+  "methods": {
+    "email": "E-Mail",
+    "email_hint": "Antwort innerhalb von 24 h garantiert",
+    "phone": "Telefon",
+    "phone_hours": "Mo–Fr 9–18 Uhr",
+    "whatsapp": "WhatsApp",
+    "whatsapp_hint": "Sofortige Antwort",
+    "office": "Büro",
+    "office_city": "Paris, Frankreich",
+    "office_hint": "Nach Vereinbarung",
+    "chat_direct": "Direkt-Chat"
+  },
+  "guide": {
+    "title": "Wie erhalten Sie Ihr Angebot?",
+    "intro": "Um die beste Lösung vorzuschlagen, benötigen wir einige Informationen über Ihr Projekt.",
+    "info_title": "Erforderliche Informationen",
+    "items": [
+      { "title": "Art der Ware:", "desc": "Art, Gewicht, Abmessungen, Wert" },
+      { "title": "Ursprung und Ziel:", "desc": "Genaue Abhol- und Lieferadressen" },
+      { "title": "Gewünschte Fristen:", "desc": "Versand- und Empfangsdatum" },
+      { "title": "Zusätzliche Leistungen:", "desc": "Versicherung, Zollabfertigung, Lieferung" }
+    ],
+    "commitment_title": "Unser Versprechen",
+    "commitment": [
+      { "title": "Schnelle Antwort:", "desc": "Detailliertes Angebot innerhalb von 24 Arbeitsstunden" },
+      { "title": "Volle Transparenz:", "desc": "Alle Kosten aufgeführt, keine Überraschungen" },
+      { "title": "Fachkundige Beratung:", "desc": "Optimale Lösungen für Ihr Budget" },
+      { "title": "Individuelle Betreuung:", "desc": "Ein fester Ansprechpartner für Ihr Projekt" }
+    ]
+  },
+  "cta": {
+    "title": "Bereit, Ihr Projekt zu starten?",
+    "text": "Unsere Experten analysieren Ihren Bedarf und schlagen die passendste Logistiklösung vor.",
+    "email": "E-Mail senden",
+    "whatsapp": "WhatsApp Direkt",
+    "call": "Jetzt anrufen"
+  }
+}

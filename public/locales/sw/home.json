@@ -1,0 +1,56 @@
+{
+  "valueProps": {
+    "title": "Kwa nini uchague MB Fret Services?",
+    "subtitle": "Tunachanganya ujuzi, teknolojia na mtandao wa kimataifa ili kutoa suluhisho za usafiri zinazolingana na mahitaji yako.",
+    "items": [
+      {
+        "title": "Usafiri wa Baharini",
+        "description": "Suluhisho za gharama nafuu kwa shehena kubwa kuelekea Afrika na Asia, zikiwa na ufuatiliaji wa wakati halisi.",
+        "features": ["Kontena za 20' na 40'", "FCL na LCL", "Kutoka bandari hadi bandari au kutoka mlangoni hadi mlangoni"]
+      },
+      {
+        "title": "Usafiri wa Anga",
+        "description": "Usafiri wa haraka na salama kwa mizigo ya dharura na ya thamani kubwa.",
+        "features": ["Uwasilishaji wa haraka", "Udhibiti wa joto", "Ufuatiliaji endelevu wa GPS"]
+      },
+      {
+        "title": "Ushuru wa Forodha",
+        "description": "Utaalamu kamili wa taratibu za forodha ili kurahisisha biashara yako ya kimataifa.",
+        "features": ["Tamko la forodha", "Uzingatiaji wa kanuni", "Msaada wa kiutawala"]
+      }
+    ]
+  },
+  "destinations_title": "Vituo vyetu Vikuu",
+  "destinations_subtitle": "Tunahudumia masoko muhimu duniani kwa suluhisho zilizobinafsishwa kwa kila eneo na aina ya shehena.",
+  "destinations_more": "Ona vituo vyote",
+  "destinations_need_specific": "Unahitaji kituo maalum? Tunatathmini maombi yote.",
+  "showcase": [
+    {
+      "country": "Kongo",
+      "city": "Pointe-Noire",
+      "image": "https://images.pexels.com/photos/5668842/pexels-photo-5668842.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Baharini kutoka Le Havre", "Kwa ndege kutoka Paris CDG"]
+    },
+    {
+      "country": "Angola",
+      "city": "Luanda",
+      "image": "https://images.pexels.com/photos/9638839/pexels-photo-9638839.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Baharini kutoka Antwerp", "Kwa ndege kutoka Marseille"]
+    },
+    {
+      "country": "China",
+      "city": "Shanghai",
+      "image": "https://images.pexels.com/photos/2412603/pexels-photo-2412603.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Njia ya baharini ya Trans-Pacific", "Kwa ndege moja kwa moja"]
+    },
+    {
+      "country": "Uturuki",
+      "city": "Istanbul",
+      "image": "https://images.pexels.com/photos/1723637/pexels-photo-1723637.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Usafiri wa barabara", "Kwa ndege kutoka Lyon"]
+    }
+  ],
+  "final_cta_title": "Uko tayari kusafirisha mizigo yako?",
+  "final_cta_text": "Pata nukuu ya kibinafsi ndani ya saa 24. Wataalamu wetu watakuongoza katika kila hatua ya mradi wako wa vifaa.",
+  "whatsapp": "Wasiliana nasi kupitia WhatsApp"
+}

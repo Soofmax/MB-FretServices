@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "I nostri Servizi di Trasporto Internazionale",
+    "subtitle": "Logistica internazionale end-to-end su misura per le tue esigenze. Dal trasporto marittimo economico al trasporto aereo espresso: gestiamo il tuo carico dalla A alla Z."
+  },
+  "maritime": {
+    "title": "Trasporto Marittimo",
+    "subtitle": "Soluzioni economiche per grandi volumi",
+    "description": "La nostra esperienza nel trasporto marittimo ci permette di offrire soluzioni ottimali per spedizioni voluminose verso Africa e Asia. Gestiamo ogni tipo di merce con tracciamento completo.",
+    "features": [
+      "Container 20' e 40' (FCL)",
+      "Groupage (LCL) per piccoli volumi",
+      "Trasporto di veicoli e macchinari",
+      "Merci speciali e pericolose",
+      "Servizio da porto a porto o porta a porta",
+      "Tracciamento in tempo reale via piattaforma web"
+    ],
+    "destinations": "Destinazioni principali: Congo, Angola, Costa d’Avorio, Camerun",
+    "more_link": "Approfondisci il trasporto marittimo"
+  },
+  "air": {
+    "title": "Trasporto Aereo",
+    "subtitle": "Velocità e affidabilità per le urgenze",
+    "description": "Il trasporto aereo è ideale per merci di alto valore, deperibili o urgenti. La nostra rete di partner garantisce tempi stretti verso tutte le destinazioni.",
+    "features": [
+      "Express 24–48 h verso le principali destinazioni",
+      "Trasporto a temperatura controllata",
+      "Merci fragili e di alto valore",
+      "Documenti e campioni",
+      "Tracciamento GPS in tempo reale",
+      "Assicurazione all risk inclusa"
+    ],
+    "destinations": "Copertura: Cina, Turchia, Marocco, Tunisia, paesi dell’Africa centrale"
+  },
+  "customs": {
+    "title": "Sdoganamento",
+    "subtitle": "Competenza amministrativa completa",
+    "description": "Il nostro team di spedizionieri doganali abilitati ti assiste in tutte le pratiche amministrative. Garantiamo la conformità normativa delle tue operazioni.",
+    "features": [
+      "Dichiarazioni di import/export",
+      "Gestione di regimi doganali speciali",
+      "Consulenza sulla classificazione tariffaria",
+      "Ottimizzazione fiscale conforme alla legge",
+      "Rappresentanza in caso di controlli",
+      "Monitoraggio normativo continuo"
+    ],
+    "destinations": "Tutti i porti e aeroporti francesi ed europei"
+  },
+  "insurance": {
+    "title": "Assicurazione Cargo",
+    "subtitle": "Protezione totale per le tue merci",
+    "description": "Proteggi il tuo investimento con soluzioni assicurative adatte a ciascuna modalità di trasporto. Copertura completa dal ritiro alla consegna finale.",
+    "features": [
+      "Assicurazione trasporti all risk",
+      "Copertura guerra e scioperi",
+      "Protezione avaria comune",
+      "Perizia e liquidazione rapida",
+      "Consulenza per la prevenzione dei rischi",
+      "Tariffe preferenziali in base ai volumi"
+    ],
+    "destinations": "Copertura mondiale per tutte le modalità di trasporto"
+  },
+  "labels": {
+    "destinations": "Destinazioni: "
+  },
+  "ctaSection": {
+    "title": "Hai bisogno di una soluzione su misura?",
+    "text": "Ogni progetto logistico è unico. I nostri esperti analizzano le tue esigenze per proporti la soluzione più adatta ed economica.",
+    "consultation": "Consulenza Gratuita",
+    "whatsapp": "Chat WhatsApp"
+  }
+}

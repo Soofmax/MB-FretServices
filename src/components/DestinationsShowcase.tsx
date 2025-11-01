@@ -40,6 +40,8 @@ const DestinationsShowcase: FC = () => {
                   alt={`${destination.country} - ${destination.city}`}
                   loading="lazy"
                   decoding="async"
+                  width={800}
+                  height={533}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -47,7 +49,7 @@ const DestinationsShowcase: FC = () => {
 
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <div className="flex items-center mb-2">
-                  <MapPin size={18} className="text-accent-400 mr-2" />
+                  <MapPin size={18} className="text-accent-400 mr-2" aria-hidden="true" />
                   <h3 className="text-xl font-bold">{destination.country}</h3>
                 </div>
                 <p className="text-gray-200 mb-3">{destination.city}</p>
@@ -55,7 +57,7 @@ const DestinationsShowcase: FC = () => {
                 <div className="space-y-1">
                   {destination.routes.map((route, routeIndex) => (
                     <div key={routeIndex} className="flex items-center text-sm text-gray-300">
-                      <ArrowRight size={14} className="mr-2 text-accent-400" />
+                      <ArrowRight size={14} className="mr-2 text-accent-400" aria-hidden="true" />
                       {route}
                     </div>
                   ))}
@@ -76,7 +78,7 @@ const DestinationsShowcase: FC = () => {
             className="inline-flex items-center text-accent-500 hover:text-accent-600 font-medium transition-colors duration-200"
           >
             {t('destinations_more')}
-            <ArrowRight size={18} className="ml-2" />
+            <ArrowRight size={18} className="ml-2" aria-hidden="true" />
           </LocalizedLink>
         </div>
       </div>

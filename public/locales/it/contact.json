@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "Contatta i nostri Esperti",
+    "subtitle": "Hai bisogno di un preventivo o di consigli? Il nostro team risponde entro 24 ore. Parliamo del tuo progetto logistico."
+  },
+  "methods": {
+    "email": "Email",
+    "email_hint": "Risposta garantita entro 24 h",
+    "phone": "Telefono",
+    "phone_hours": "Lun–Ven 9–18",
+    "whatsapp": "WhatsApp",
+    "whatsapp_hint": "Risposta immediata",
+    "office": "Ufficio",
+    "office_city": "Parigi, Francia",
+    "office_hint": "Su appuntamento",
+    "chat_direct": "Chat Diretta"
+  },
+  "guide": {
+    "title": "Come ottenere il tuo preventivo?",
+    "intro": "Per proporti la soluzione migliore, abbiamo bisogno di alcune informazioni sul tuo progetto.",
+    "info_title": "Informazioni necessarie",
+    "items": [
+      { "title": "Tipo di merce:", "desc": "Natura, peso, dimensioni, valore" },
+      { "title": "Origine e destinazione:", "desc": "Indirizzi esatti di ritiro e consegna" },
+      { "title": "Tempi desiderati:", "desc": "Date di spedizione e ricezione" },
+      { "title": "Servizi aggiuntivi:", "desc": "Assicurazione, sdoganamento, consegna" }
+    ],
+    "commitment_title": "Il nostro impegno",
+    "commitment": [
+      { "title": "Risposta rapida:", "desc": "Preventivo dettagliato entro 24 ore lavorative" },
+      { "title": "Massima trasparenza:", "desc": "Tutti i costi dettagliati, nessuna sorpresa" },
+      { "title": "Consulenza esperta:", "desc": "Soluzioni ottimali per il tuo budget" },
+      { "title": "Follow-up personalizzato:", "desc": "Un referente dedicato al tuo progetto" }
+    ]
+  },
+  "cta": {
+    "title": "Pronto per iniziare il tuo progetto?",
+    "text": "I nostri esperti sono disponibili per analizzare le tue esigenze e proporti la soluzione logistica più adatta.",
+    "email": "Invia Email",
+    "whatsapp": "WhatsApp Diretto",
+    "call": "Chiama Ora"
+  }
+}

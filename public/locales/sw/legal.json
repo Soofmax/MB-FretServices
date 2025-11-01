@@ -1,0 +1,51 @@
+{
+  "page_title": "Ilani ya Kisheria",
+  "sections": {
+    "info": {
+      "heading": "Taarifa za Kisheria",
+      "labels": {
+        "raison_sociale": "Jina la kampuni",
+        "forme_juridique": "Aina ya kisheria",
+        "capital_social": "Mtaji wa hisa",
+        "siege_social": "Makao makuu",
+        "siret": "SIRET",
+        "code_ape": "Msimbo wa APE"
+      }
+    },
+    "contact": {
+      "heading": "Mawasiliano",
+      "labels": {
+        "telephone": "Simu",
+        "email": "Barua pepe",
+        "adresse": "Anwani"
+      }
+    },
+    "hosting": {
+      "heading": "Uwekaji Wavuti",
+      "content_line1": "Tovuti hii imehifadhiwa na [Jina la mtoa huduma]",
+      "content_line2": "[Anwani ya mtoa huduma]"
+    },
+    "ip": {
+      "heading": "Haki Miliki",
+      "content": "Tovuti hii inatii sheria za Ufaransa na kimataifa kuhusu hakimiliki na mali miliki. Haki zote zimehifadhiwa."
+    },
+    "terms": {
+      "heading": "Masharti ya Matumizi",
+      "content": "Matumizi ya tovuti hii yanamaanisha kukubali kikamilifu masharti ya jumla yaliyoelezwa hapa chini. Masharti haya yanaweza kubadilishwa au kuongezwa wakati wowote."
+    },
+    "privacy": {
+      "heading": "Ulinzi wa Data Binafsi",
+      "content1": "Kwa mujibu wa sheria ya Ufaransa ya Ulinzi wa Takwimu ya tarehe 6 Januari 1978 (iliyorekebishwa) na GDPR, una haki ya kufikia, kusahihisha, kuhamisha na kufuta data zako binafsi.",
+      "content2": "Ili kutumia haki hizi, tafadhali wasiliana nasi: contact@mb-fretservices.com"
+    },
+    "cookies": {
+      "heading": "Vidakuzi (Cookies)",
+      "content": "Tovuti hii hutumia vidakuzi kuboresha uzoefu wa mtumiaji na kutengeneza takwimu za ziara. Kwa kuendelea kuvinjari, unakubali matumizi ya vidakuzi hivi."
+    },
+    "liability": {
+      "heading": "Uwajibikaji",
+      "content": "MB Fret Services hujitahidi kutoa taarifa sahihi iwezekanavyo. Hata hivyo, haiwezi kuwajibika kwa mapungufu, makosa au kuchelewa kusasisha, iwe kwa makosa yake au ya washirika wanaotoa taarifa."
+    },
+    "last_update": "Sasisho la mwisho: {{date}}"
+  }
+}

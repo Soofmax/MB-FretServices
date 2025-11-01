@@ -1,11 +1,12 @@
 import type { FC, ReactNode } from 'react';
-import { Outlet, useParams } from 'react-router-dom';
+import { Outlet, useParams, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import i18n, { SUPPORTED_LANGS, type SupportedLang } from '../i18n';
 import SiteSEO from './SiteSEO';
 import ScrollToTop from './ScrollToTop';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { trackPageview } from '../analytics';
 
 type Params = {
   lng?: string;
@@ -18,6 +19,7 @@ const isRtl = (lng: string) => ['ar', 'he', 'fa', 'ur'].includes(lng);
 
 const LangLayout: FC<{ children?: ReactNode }> = () => {
   const { lng } = useParams<Params>();
+  const location = useLocation();
 
   useEffect(() => {
     const language: SupportedLang = isSupported(lng) ? lng : 'fr';
@@ -27,6 +29,18 @@ const LangLayout: FC<{ children?: ReactNode }> = () => {
       document.documentElement.dir = isRtl(language) ? 'rtl' : 'ltr';
     }
   }, [lng]);
+
+  // Accessibilité: déplacer le focus sur le contenu principal après navigation
+  useEffect(() => {
+    const main = document.getElementById('main');
+    if (main) main.focus();
+    // Analytics page view
+    try {
+      trackPageview(location.pathname + location.search + location.hash);
+    } catch {
+      // ignore
+    }
+  }, [location.pathname, location.search, location.hash]);
 
   return (
     <>

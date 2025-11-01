@@ -1,0 +1,51 @@
+{
+  "page_title": "Yasal Bilgi",
+  "sections": {
+    "info": {
+      "heading": "Yasal Bilgiler",
+      "labels": {
+        "raison_sociale": "Ticari unvan",
+        "forme_juridique": "Hukuki statü",
+        "capital_social": "Sermaye",
+        "siege_social": "Merkez adresi",
+        "siret": "SIRET",
+        "code_ape": "APE kodu"
+      }
+    },
+    "contact": {
+      "heading": "İletişim",
+      "labels": {
+        "telephone": "Telefon",
+        "email": "E-posta",
+        "adresse": "Adres"
+      }
+    },
+    "hosting": {
+      "heading": "Barındırma",
+      "content_line1": "Bu site [Barındırıcı adı] tarafından barındırılmaktadır",
+      "content_line2": "[Barındırıcı adresi]"
+    },
+    "ip": {
+      "heading": "Fikri Mülkiyet",
+      "content": "Bu sitenin tamamı telif hakkı ve fikri mülkiyet ile ilgili Fransız ve uluslararası mevzuata tabidir. Tüm çoğaltma hakları saklıdır."
+    },
+    "terms": {
+      "heading": "Kullanım Koşulları",
+      "content": "Bu siteyi kullanmak, aşağıda açıklanan genel kullanım koşullarının tamamen kabul edildiği anlamına gelir. Bu koşullar her zaman değiştirilebilir veya tamamlanabilir."
+    },
+    "privacy": {
+      "heading": "Kişisel Verilerin Korunması",
+      "content1": "6 Ocak 1978 tarihli ve sonrasında değiştirilen Fransız Veri Koruma Yasası ile Genel Veri Koruma Tüzüğü'ne (GDPR) uygun olarak kişisel verilerinize erişme, düzeltme, taşınabilirlik ve silme hakkına sahipsiniz.",
+      "content2": "Bu hakları kullanmak için lütfen şu adresten bize ulaşın: contact@mb-fretservices.com"
+    },
+    "cookies": {
+      "heading": "Çerezler",
+      "content": "Bu site, kullanıcı deneyimini iyileştirmek ve ziyaret istatistikleri oluşturmak için çerezler kullanır. Gezintiye devam ederek bu çerezlerin kullanımını kabul etmiş olursunuz."
+    },
+    "liability": {
+      "heading": "Sorumluluk",
+      "content": "MB Fret Services en doğru bilgiyi sunmaya özen gösterir. Bununla birlikte, bilgileri sağlayan üçüncü taraf ortakların veya kendi sebeplerinden kaynaklanan eksiklikler, yanlışlıklar ve güncelleme hatalarından sorumlu tutulamaz."
+    },
+    "last_update": "Son güncelleme: {{date}}"
+  }
+}

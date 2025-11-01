@@ -1,0 +1,66 @@
+{
+  "seo": {
+    "title": "Usafiri wa Baharini kwenda Afrika - Usafirishaji wa Kontena FCL LCL | MB Fret Services",
+    "description": "Usafiri wa baharini wa kitaalamu kwenda Afrika: Kongo, Angola, Ivory Coast. Kontena 20' na 40', FCL na LCL. Nukuu bila malipo ndani ya saa 24. Uzoefu wa miaka 15+."
+  },
+  "hero": {
+    "title": "Usafiri wa Baharini kwenda Afrika",
+    "subtitle": "Suluhisho za kontena FCL na LCL",
+    "intro": "Usafiri wa baharini wa kitaalamu kuelekea bandari kuu za Afrika. Kontena 20' na 40', groupage ya LCL, magari na mizigo maalum. Safari za mara kwa mara kutoka bandari za Ufaransa na Ulaya.",
+    "cta_quote": "Nukuu ya Usafiri wa Baharini",
+    "cta_whatsapp": "WhatsApp Moja kwa Moja"
+  },
+  "why": {
+    "title": "Kwa nini uchague usafiri wetu wa baharini?",
+    "subtitle": "Utaalamu uliothibitishwa katika usafiri wa baharini kwenda Afrika, kwa suluhisho zinazokidhi mahitaji yako."
+  },
+  "advantages": [
+    { "title": "Utaalamu wa Baharini", "description": "Miaka 15+ ya uzoefu katika usafiri wa baharini kwenda Afrika" },
+    { "title": "Muda Uliodhibitiwa", "description": "Safari za mara kwa mara na muda wa transit ulioboreshwa" },
+    { "title": "Usalama Uliothibitishwa", "description": "Bima ya mizigo na ufuatiliaji wa wakati halisi wa bidhaa zako" }
+  ],
+  "services": {
+    "title": "Huduma zetu za Usafiri wa Baharini",
+    "subtitle": "Suluhisho kamili za baharini kwa aina zote za mizigo. Kutoka ukusanyaji hadi utoaji, tunasimamia shehena yako kutoka A hadi Z.",
+    "list": [
+      "Kontena 20' na 40' (FCL - Full Container Load)",
+      "Groupage ya baharini (LCL - Less than Container Load)",
+      "Usafirishaji wa magari mapya na yaliyotumika",
+      "Mashine za viwandani na vifaa vizito",
+      "Bidhaa hatarishi (IMO)",
+      "Kontena zenye friji (reefer)",
+      "Huduma ya mlangoni hadi mlangoni yenye ukusanyaji",
+      "Ushuru wa forodha wa uingizaji/utokaji umejumuishwa"
+    ],
+    "cta": "Omba Nukuu Maalum"
+  },
+  "destinations": {
+    "title": "Vituo vya Usafiri wa Baharini - Afrika",
+    "subtitle": "Safari za mara kwa mara kuelekea bandari kuu za Afrika zikiwa na muda ulioboreshwa.",
+    "label_duration": "Muda wa transit",
+    "label_frequency": "Marudio",
+    "label_departure": "Kuondoka kutoka",
+    "cta_prefix": "Nukuu hadi "
+  },
+  "destinations_list": [
+    { "country": "Kongo", "port": "Pointe-Noire", "duration": "Siku 18–22", "frequency": "Kila wiki", "departure": "Le Havre, Antwerp" },
+    { "country": "Angola", "port": "Luanda", "duration": "Siku 20–25", "frequency": "Mara mbili kwa wiki", "departure": "Antwerp, Rotterdam" },
+    { "country": "Ivory Coast", "port": "Abidjan", "duration": "Siku 12–15", "frequency": "Kila siku", "departure": "Le Havre, Marseille" },
+    { "country": "Cameroon", "port": "Douala", "duration": "Siku 15–18", "frequency": "Mara mbili kwa wiki", "departure": "Antwerp, Hamburg" }
+  ],
+  "faq": {
+    "title": "Maswali Yanayoulizwa Mara kwa Mara - Usafiri wa Baharini",
+    "q1": "Tofauti kati ya FCL na LCL ni nini?",
+    "a1": "FCL (Full Container Load): Unakodisha kontena zima (20' au 40') kwa ajili ya bidhaa zako pekee. LCL (Less than Container Load): Bidhaa zako zinashiriki kontena na wasafirishaji wengine, bora kwa kiasi kidogo.",
+    "q2": "Ni nyaraka gani zinahitajika kwa usafiri wa baharini?",
+    "a2": "Ankara ya kibiashara, orodha ya kufunga, B/L (Bill of Lading), cheti cha asili iwapo kinahitajika, na nyaraka maalum kulingana na aina ya bidhaa (vyeti vya afya, nk).",
+    "q3": "Ninafuatiliaje kontena langu likiwa safarini?",
+    "a3": "Tunatoa nambari ya ufuatiliaji na ufikiaji wa jukwaa letu la wavuti kwa ufuatiliaji wa wakati halisi kutoka bandari ya kuondoka hadi bandari ya kufika."
+  },
+  "final": {
+    "title": "Uko tayari kutuma kwa njia ya bahari?",
+    "text": "Pata nukuu yako ya kibinafsi ndani ya saa 24. Wataalamu wetu huchambua mahitaji yako na kupendekeza suluhisho la baharini lenye gharama nafuu zaidi.",
+    "cta": "Nukuu ya Usafiri wa Baharini",
+    "whatsapp": "WhatsApp ya Haraka"
+  }
+}

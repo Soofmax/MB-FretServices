@@ -6,7 +6,7 @@ type PropItem = {
   title: string;
   description: string;
   features: string[];
-  icon: ComponentType<{ size?: number | string; className?: string }>;
+  icon: ComponentType<{ size?: number | string; className?: string; 'aria-hidden'?: boolean }>;
 };
 
 const ValuePropositions: FC = () => {
@@ -17,7 +17,7 @@ const ValuePropositions: FC = () => {
     description: string;
     features: string[];
   }>).map((it, idx) => {
-    const iconMap: Record<number, ComponentType<{ size?: number | string; className?: string }>> = {
+    const iconMap: Record<number, ComponentType<{ size?: number | string; className?: string; 'aria-hidden'?: boolean }>> = {
       0: Ship,
       1: Plane,
       2: Shield,
@@ -47,7 +47,7 @@ const ValuePropositions: FC = () => {
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-accent-400 to-accent-600 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Icon size={32} className="text-white" />
+                  <Icon size={32} className="text-white" aria-hidden="true" />
                 </div>
 
                 <h3 className="text-2xl font-bold text-primary-900 mb-4 group-hover:text-accent-500 transition-colors duration-300">

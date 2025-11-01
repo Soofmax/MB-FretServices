@@ -1,0 +1,66 @@
+{
+  "seo": {
+    "title": "Afrika'ya Deniz Taşımacılığı - FCL LCL Konteyner Taşıma | MB Fret Services",
+    "description": "Afrika'ya profesyonel deniz taşımacılığı: Kongo, Angola, Fildişi Sahili. 20' ve 40' konteynerler, FCL ve LCL. 24 saat içinde ücretsiz teklif. 15+ yıl uzmanlık."
+  },
+  "hero": {
+    "title": "Afrika'ya Deniz Taşımacılığı",
+    "subtitle": "FCL ve LCL konteyner çözümleri",
+    "intro": "Başlıca Afrika limanlarına profesyonel deniz taşımacılığı. 20' ve 40' konteynerler, LCL grupaj, araçlar ve özel yükler. Fransız ve Avrupa limanlarından düzenli seferler.",
+    "cta_quote": "Ücretsiz Deniz Taşımacılığı Teklifi",
+    "cta_whatsapp": "Doğrudan WhatsApp"
+  },
+  "why": {
+    "title": "Neden deniz taşımacılığımızı seçmelisiniz?",
+    "subtitle": "Afrika'ya deniz taşımacılığında tüm ihtiyaçlarınıza uygun çözümler sunan kanıtlanmış uzmanlık."
+  },
+  "advantages": [
+    { "title": "Denizcilik Uzmanlığı", "description": "Afrika'ya deniz taşımacılığında 15+ yıl deneyim" },
+    { "title": "Kontrollü Süreler", "description": "Düzenli seferler ve optimize transit süreleri" },
+    { "title": "Garantili Güvenlik", "description": "Kargo sigortası ve yüklerinizin gerçek zamanlı takibi" }
+  ],
+  "services": {
+    "title": "Deniz Taşımacılığı Hizmetlerimiz",
+    "subtitle": "Her tür kargo için kapsamlı deniz çözümleri. Alımdan teslimata kadar sevkiyatınızı A'dan Z'ye yönetiyoruz.",
+    "list": [
+      "20' ve 40' konteynerler (FCL - Full Container Load)",
+      "Deniz grupajı (LCL - Less than Container Load)",
+      "Sıfır ve ikinci el araç taşımacılığı",
+      "Endüstriyel makineler ve ağır ekipman",
+      "Tehlikeli maddeler (IMO)",
+      "Soğutuculu konteynerler (reefer)",
+      "Alımlı kapıdan kapıya hizmet",
+      "İthalat/ihracat gümrükleme dahil"
+    ],
+    "cta": "Kişiye Özel Teklif Alın"
+  },
+  "destinations": {
+    "title": "Deniz Taşımacılığı Destinasyonları - Afrika",
+    "subtitle": "Başlıca Afrika limanlarına düzenli seferler, optimize süreler.",
+    "label_duration": "Transit süresi",
+    "label_frequency": "Sıklık",
+    "label_departure": "Kalkış noktası",
+    "cta_prefix": "Teklif: "
+  },
+  "destinations_list": [
+    { "country": "Kongo", "port": "Pointe-Noire", "duration": "18–22 gün", "frequency": "Haftalık", "departure": "Le Havre, Anvers" },
+    { "country": "Angola", "port": "Luanda", "duration": "20–25 gün", "frequency": "Haftada iki kez", "departure": "Anvers, Rotterdam" },
+    { "country": "Fildişi Sahili", "port": "Abidjan", "duration": "12–15 gün", "frequency": "Günlük", "departure": "Le Havre, Marsilya" },
+    { "country": "Kamerun", "port": "Douala", "duration": "15–18 gün", "frequency": "Haftada iki kez", "departure": "Anvers, Hamburg" }
+  ],
+  "faq": {
+    "title": "Sık Sorulan Sorular - Deniz Taşımacılığı",
+    "q1": "FCL ve LCL arasındaki fark nedir?",
+    "a1": "FCL (Full Container Load): 20' veya 40' bir konteyneri sadece yükünüz için kiralarsınız. LCL (Less than Container Load): Yükünüz diğer göndericilerle konteyneri paylaşır, küçük hacimler için idealdir.",
+    "q2": "Deniz taşımacılığı için hangi belgeler gerekir?",
+    "a2": "Ticari fatura, çeki listesi, deniz konşimentosu (Bill of Lading), gerekiyorsa menşe şahadetnamesi ve yükün niteliğine göre ek belgeler (sağlık sertifikaları vb.).",
+    "q3": "Transit halindeki konteynerimi nasıl takip ederim?",
+    "a3": "Yükleme limanından varış limanına kadar gerçek zamanlı takip için takip numarası ve web platformumuza erişim sağlıyoruz."
+  },
+  "final": {
+    "title": "Deniz yoluyla göndermeye hazır mısınız?",
+    "text": "24 saatten kısa sürede kişisel teklifinizi alın. Uzmanlarımız ihtiyaçlarınızı analiz ederek en ekonomik deniz çözümünü önerir.",
+    "cta": "Deniz Taşımacılığı Teklifi",
+    "whatsapp": "Anında WhatsApp"
+  }
+}

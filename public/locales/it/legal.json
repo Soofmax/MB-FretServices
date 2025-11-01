@@ -1,0 +1,51 @@
+{
+  "page_title": "Note legali",
+  "sections": {
+    "info": {
+      "heading": "Informazioni legali",
+      "labels": {
+        "raison_sociale": "Ragione sociale",
+        "forme_juridique": "Forma giuridica",
+        "capital_social": "Capitale sociale",
+        "siege_social": "Sede legale",
+        "siret": "SIRET",
+        "code_ape": "Codice APE"
+      }
+    },
+    "contact": {
+      "heading": "Contatti",
+      "labels": {
+        "telephone": "Telefono",
+        "email": "Email",
+        "adresse": "Indirizzo"
+      }
+    },
+    "hosting": {
+      "heading": "Hosting",
+      "content_line1": "Questo sito è ospitato da [Nome dell'hosting]",
+      "content_line2": "[Indirizzo dell'hosting]"
+    },
+    "ip": {
+      "heading": "Proprietà intellettuale",
+      "content": "L'intero sito è soggetto alla legislazione francese e internazionale sul diritto d'autore e sulla proprietà intellettuale. Tutti i diritti sono riservati."
+    },
+    "terms": {
+      "heading": "Condizioni d'uso",
+      "content": "L'uso di questo sito implica l'accettazione completa delle condizioni generali d'uso descritte di seguito. Tali condizioni possono essere modificate o integrate in qualsiasi momento."
+    },
+    "privacy": {
+      "heading": "Protezione dei dati personali",
+      "content1": "In conformità con la legge francese sulla protezione dei dati del 6 gennaio 1978 (modificata) e con il Regolamento Generale sulla Protezione dei Dati (RGPD), hai il diritto di accesso, rettifica, portabilità ed eliminazione dei tuoi dati personali.",
+      "content2": "Per esercitare tali diritti, contattaci a: contact@mb-fretservices.com"
+    },
+    "cookies": {
+      "heading": "Cookie",
+      "content": "Questo sito utilizza cookie per migliorare l'esperienza utente e realizzare statistiche di visita. Continuando la navigazione, accetti l'uso dei cookie."
+    },
+    "liability": {
+      "heading": "Responsabilità",
+      "content": "MB Fret Services si impegna a fornire informazioni il più precise possibile. Tuttavia, non può essere ritenuta responsabile per omissioni, inesattezze o carenze di aggiornamento, sia per cause proprie sia di partner terzi che forniscono tali informazioni."
+    },
+    "last_update": "Ultimo aggiornamento: {{date}}"
+  }
+}

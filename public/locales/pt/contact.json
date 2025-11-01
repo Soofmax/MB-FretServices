@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "Contacte os Nossos Especialistas",
+    "subtitle": "Precisa de um orçamento ou de aconselhamento? A nossa equipa responde em 24 horas. Vamos falar do seu projeto logístico."
+  },
+  "methods": {
+    "email": "Email",
+    "email_hint": "Resposta em 24h garantida",
+    "phone": "Telefone",
+    "phone_hours": "Seg–Sex 9h–18h",
+    "whatsapp": "WhatsApp",
+    "whatsapp_hint": "Resposta imediata",
+    "office": "Escritório",
+    "office_city": "Paris, França",
+    "office_hint": "Sob marcação",
+    "chat_direct": "Chat Direto"
+  },
+  "guide": {
+    "title": "Como obter o seu orçamento?",
+    "intro": "Para propormos a melhor solução, precisamos de algumas informações sobre o seu projeto.",
+    "info_title": "Informações necessárias",
+    "items": [
+      { "title": "Tipo de mercadoria:", "desc": "Natureza, peso, dimensões, valor" },
+      { "title": "Origem e destino:", "desc": "Moradas exatas de recolha e entrega" },
+      { "title": "Prazos desejados:", "desc": "Datas de expedição e receção" },
+      { "title": "Serviços adicionais:", "desc": "Seguro, desalfandegamento, entrega" }
+    ],
+    "commitment_title": "O nosso compromisso",
+    "commitment": [
+      { "title": "Resposta rápida:", "desc": "Orçamento detalhado em 24 horas úteis" },
+      { "title": "Transparência total:", "desc": "Todas as taxas detalhadas, sem surpresas" },
+      { "title": "Aconselhamento especializado:", "desc": "Soluções ideais para o seu orçamento" },
+      { "title": "Acompanhamento personalizado:", "desc": "Um contacto dedicado ao seu projeto" }
+    ]
+  },
+  "cta": {
+    "title": "Pronto para iniciar o seu projeto?",
+    "text": "Os nossos especialistas estão disponíveis para analisar as suas necessidades e propor a solução logística mais adequada.",
+    "email": "Enviar Email",
+    "whatsapp": "WhatsApp Direto",
+    "call": "Ligar Agora"
+  }
+}

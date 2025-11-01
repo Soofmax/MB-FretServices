@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "Uzmanlarımızla İletişime Geçin",
+    "subtitle": "Teklif veya danışmanlık mı lazım? Ekibimiz 24 saat içinde yanıt verir. Lojistik projenizi konuşalım."
+  },
+  "methods": {
+    "email": "E-posta",
+    "email_hint": "24 saat içinde yanıt garantisi",
+    "phone": "Telefon",
+    "phone_hours": "Pzt–Cum 9:00–18:00",
+    "whatsapp": "WhatsApp",
+    "whatsapp_hint": "Anında yanıt",
+    "office": "Ofis",
+    "office_city": "Paris, Fransa",
+    "office_hint": "Randevu ile",
+    "chat_direct": "Doğrudan Sohbet"
+  },
+  "guide": {
+    "title": "Teklifinizi nasıl alırsınız?",
+    "intro": "En iyi çözümü önerebilmemiz için projenizle ilgili bazı bilgilere ihtiyacımız var.",
+    "info_title": "Gerekli bilgiler",
+    "items": [
+      { "title": "Yük türü:", "desc": "Cinsi, ağırlığı, ebatları, değeri" },
+      { "title": "Çıkış ve varış:", "desc": "Alım ve teslimat adresleri" },
+      { "title": "İstenen zamanlama:", "desc": "Sevkiyat ve teslim tarihleriniz" },
+      { "title": "Ek hizmetler:", "desc": "Sigorta, gümrükleme, teslimat" }
+    ],
+    "commitment_title": "Taahhüdümüz",
+    "commitment": [
+      { "title": "Hızlı yanıt:", "desc": "24 iş saati içinde detaylı teklif" },
+      { "title": "Tam şeffaflık:", "desc": "Tüm ücretler kalem kalem, sürpriz yok" },
+      { "title": "Uzman tavsiye:", "desc": "Bütçenize en uygun çözümler" },
+      { "title": "Kişisel takip:", "desc": "Projenize özel bir muhatap" }
+    ]
+  },
+  "cta": {
+    "title": "Projenize başlamak için hazır mısınız?",
+    "text": "Uzmanlarımız ihtiyaçlarınızı analiz ederek en uygun lojistik çözümü sunmak için hazır.",
+    "email": "E-posta Gönder",
+    "whatsapp": "WhatsApp Doğrudan",
+    "call": "Hemen Ara"
+  }
+}

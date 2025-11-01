@@ -1,0 +1,56 @@
+{
+  "valueProps": {
+    "title": "MB Fret Services'i neden seçmelisiniz?",
+    "subtitle": "İhtiyaçlarınıza uygun taşımacılık çözümleri sunmak için uzmanlık, teknoloji ve küresel ağı bir araya getiriyoruz.",
+    "items": [
+      {
+        "title": "Deniz Taşımacılığı",
+        "description": "Afrika ve Asya'ya yönelik büyük hacimli gönderileriniz için ekonomik çözümler, gerçek zamanlı takip ile.",
+        "features": ["20' ve 40' konteynerler", "FCL ve LCL", "Limandan limana veya kapıdan kapıya"]
+      },
+      {
+        "title": "Hava Taşımacılığı",
+        "description": "Acil ve yüksek değerli gönderiler için hızlı ve güvenli taşımacılık.",
+        "features": ["Ekspres teslimat", "Sıcaklık kontrollü", "Sürekli GPS izleme"]
+      },
+      {
+        "title": "Gümrükleme",
+        "description": "Uluslararası ticaretinizi kolaylaştırmak için kapsamlı gümrük prosedürleri uzmanlığı.",
+        "features": ["Gümrük beyanları", "Mevzuata uyum", "İdari destek"]
+      }
+    ]
+  },
+  "destinations_title": "Başlıca Hedeflerimiz",
+  "destinations_subtitle": "Her bölge ve yük türüne uygun çözümlerle dünya genelindeki kilit pazarlara hizmet veriyoruz.",
+  "destinations_more": "Tüm destinasyonları görün",
+  "destinations_need_specific": "Belirli bir destinasyona mı ihtiyacınız var? Tüm talepleri değerlendiriyoruz.",
+  "showcase": [
+    {
+      "country": "Kongo",
+      "city": "Pointe-Noire",
+      "image": "https://images.pexels.com/photos/5668842/pexels-photo-5668842.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Le Havre'den denizyolu", "Paris CDG'den havayolu"]
+    },
+    {
+      "country": "Angola",
+      "city": "Luanda",
+      "image": "https://images.pexels.com/photos/9638839/pexels-photo-9638839.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Anvers'ten denizyolu", "Marsilya'dan havayolu"]
+    },
+    {
+      "country": "Çin",
+      "city": "Şanghay",
+      "image": "https://images.pexels.com/photos/2412603/pexels-photo-2412603.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Pasifik aşırı deniz rotası", "Doğrudan hava"]
+    },
+    {
+      "country": "Türkiye",
+      "city": "İstanbul",
+      "image": "https://images.pexels.com/photos/1723637/pexels-photo-1723637.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["Kara taşımacılığı", "Lyon'dan havayolu"]
+    }
+  ],
+  "final_cta_title": "Yüklerinizi göndermeye hazır mısınız?",
+  "final_cta_text": "24 saatten kısa sürede kişisel teklif alın. Uzmanlarımız lojistik projenizin her aşamasında yanınızdadır.",
+  "whatsapp": "WhatsApp üzerinden bize ulaşın"
+}

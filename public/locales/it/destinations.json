@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "Le nostre Destinazioni Globali",
+    "subtitle": "Ampia rete di partner logistici per collegare i tuoi mercati. Rotte ottimizzate e frequenze adeguate alle esigenze del tuo business."
+  },
+  "labels": {
+    "port_principal": "Porto principale:",
+    "depart": "Partenza:",
+    "duree": "Durata:",
+    "frequence": "Frequenza:",
+    "maritime": "Trasporto Marittimo",
+    "air": "Trasporto Aereo",
+    "specialites": "Specialità di trasporto:"
+  },
+  "regions": [
+    {
+      "name": "Africa Centrale",
+      "countries": [
+        {
+          "name": "Congo",
+          "capital": "Brazzaville",
+          "port": "Pointe-Noire",
+          "maritime": { "from": "Le Havre, Anversa", "duration": "18–22 giorni", "frequency": "Settimanale" },
+          "aerien": { "from": "Parigi CDG, Lione", "duration": "6–8 ore", "frequency": "Giornaliera" },
+          "specialites": ["Veicoli", "Macchine industriali", "Prodotti alimentari"]
+        },
+        {
+          "name": "Angola",
+          "capital": "Luanda",
+          "port": "Luanda",
+          "maritime": { "from": "Anversa, Rotterdam", "duration": "20–25 giorni", "frequency": "Bisettimanale" },
+          "aerien": { "from": "Parigi CDG, Marsiglia", "duration": "7–9 ore", "frequency": "5×/settimana" },
+          "specialites": ["Apparecchiature mediche", "Edilizia", "Elettronica"]
+        }
+      ]
+    },
+    {
+      "name": "Asia",
+      "countries": [
+        {
+          "name": "Cina",
+          "capital": "Pechino",
+          "port": "Shanghai, Shenzhen",
+          "maritime": { "from": "Le Havre, Amburgo", "duration": "30–35 giorni", "frequency": "Giornaliera" },
+          "aerien": { "from": "Parigi CDG, Lione", "duration": "10–12 ore", "frequency": "Giornaliera" },
+          "specialites": ["Import tessile", "Elettronica", "Macchinari"]
+        }
+      ]
+    },
+    {
+      "name": "Medio Oriente",
+      "countries": [
+        {
+          "name": "Turchia",
+          "capital": "Ankara",
+          "port": "Istanbul, Izmir",
+          "maritime": { "from": "Marsiglia, Genova", "duration": "5–7 giorni", "frequency": "3×/settimana" },
+          "aerien": { "from": "Parigi CDG, Lione, Nizza", "duration": "3–4 ore", "frequency": "Giornaliera" },
+          "specialites": ["Tessile", "Agroalimentare", "Automotive"]
+        }
+      ]
+    }
+  ],
+  "other": {
+    "not_listed_title": "Destinazione non in elenco?",
+    "not_listed_text": "La nostra rete globale ci permette di valutare qualsiasi destinazione. Contattaci per una valutazione personalizzata del tuo progetto.",
+    "fast_response": "Risposta Rapida",
+    "fast_response_desc": "Preventivo entro 24 h per qualsiasi destinazione",
+    "global_network": "Rete Globale",
+    "global_network_desc": "Partner in oltre 50 paesi",
+    "tailored": "Soluzioni su Misura",
+    "tailored_desc": "Adattate alle tue esigenze specifiche",
+    "cta_study": "Valuta la mia Destinazione",
+    "cta_whatsapp": "WhatsApp Diretto",
+    "cta_for": "Richiedi un Preventivo per {{country}}"
+  }
+}

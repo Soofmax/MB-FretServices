@@ -5,7 +5,7 @@ import SEO from '../components/SEO';
 import { getSiteUrl } from '../utils/siteUrl';
 import { useTranslation } from 'react-i18next';
 
-type Advantage = { icon: ComponentType<{ size?: number | string; className?: string }>; title: string; description: string };
+type Advantage = { icon: ComponentType<{ size?: number | string; className?: string; 'aria-hidden'?: boolean }>; title: string; description: string };
 type Destination = { country: string; port: string; duration: string; frequency: string; departure: string };
 
 const FreightMaritime: FC = () => {
@@ -118,7 +118,7 @@ const FreightMaritime: FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="animate-fade-in">
             <div className="flex items-center mb-6">
-              <Ship size={48} className="text-accent-400 mr-4" />
+              <Ship size={48} className="text-accent-400 mr-4" aria-hidden="true" />
               <div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   {t('hero.title')}
@@ -138,7 +138,7 @@ const FreightMaritime: FC = () => {
                 {t('hero.cta_quote')}
               </CtaButton>
               <a
-                href="https://wa.me/33123456789?text=Bonjour, je souhaite un devis pour du fret maritime vers l'Afrique"
+                href={`https://wa.me/33123456789?text=${encodeURIComponent("Bonjour, je souhaite un devis pour du fret maritime vers l'Afrique")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-white transition-all duration-200"
@@ -170,7 +170,7 @@ const FreightMaritime: FC = () => {
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-accent-400 to-accent-600 rounded-xl mx-auto mb-6 flex items-center justify-center">
-                  <advantage.icon size={32} className="text-white" />
+                  <advantage.icon size={32} className="text-white" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-bold text-primary-900 mb-4">{advantage.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{advantage.description}</p>
@@ -195,7 +195,7 @@ const FreightMaritime: FC = () => {
               <div className="space-y-4">
                 {services.map((service, index) => (
                   <div key={index} className="flex items-start">
-                    <CheckCircle size={20} className="text-accent-500 mr-3 mt-1 flex-shrink-0" />
+                    <CheckCircle size={20} className="text-accent-500 mr-3 mt-1 flex-shrink-0" aria-hidden="true" />
                     <span className="text-gray-700">{service}</span>
                   </div>
                 ))}
@@ -214,6 +214,8 @@ const FreightMaritime: FC = () => {
                 alt="Conteneurs de fret maritime"
                 loading="lazy"
                 decoding="async"
+                width={800}
+                height={533}
                 className="w-full h-96 object-cover rounded-xl shadow-xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-900/30 to-transparent rounded-xl"></div>
@@ -242,7 +244,7 @@ const FreightMaritime: FC = () => {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <div className="flex items-center mb-6">
-                  <MapPin size={24} className="text-accent-500 mr-3" />
+                  <MapPin size={24} className="text-accent-500 mr-3" aria-hidden="true" />
                   <div>
                     <h3 className="text-2xl font-bold text-primary-900">{destination.country}</h3>
                     <p className="text-gray-600">Port : {destination.port}</p>
@@ -329,12 +331,12 @@ const FreightMaritime: FC = () => {
               {t('final.cta')}
             </CtaButton>
             <a
-              href="https://wa.me/33123456789?text=Bonjour, je souhaite un devis pour du fret maritime"
+              href={`https://wa.me/33123456789?text=${encodeURIComponent('Bonjour, je souhaite un devis pour du fret maritime')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-white transition-all duration-200"
             >
-              <ArrowRight size={20} className="mr-2" />
+              <ArrowRight size={20} className="mr-2" aria-hidden="true" />
               {t('final.whatsapp')}
             </a>
           </div>

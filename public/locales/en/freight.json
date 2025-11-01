@@ -1,0 +1,66 @@
+{
+  "seo": {
+    "title": "Sea Freight to Africa - FCL LCL Container Transport | MB Fret Services",
+    "description": "Professional sea freight to Africa: Congo, Angola, Côte d'Ivoire. 20' and 40' containers, FCL and LCL. Free quote within 24h. 15 years of expertise."
+  },
+  "hero": {
+    "title": "Sea Freight to Africa",
+    "subtitle": "FCL and LCL container solutions",
+    "intro": "Professional sea transport to major African ports. 20' and 40' containers, LCL groupage, vehicles and special cargo. Regular rotations from French and European ports.",
+    "cta_quote": "Free Sea Freight Quote",
+    "cta_whatsapp": "WhatsApp Direct"
+  },
+  "why": {
+    "title": "Why choose our sea freight?",
+    "subtitle": "Recognized expertise in sea transport to Africa with solutions for all your needs."
+  },
+  "advantages": [
+    { "title": "Maritime Expertise", "description": "Over 15 years of experience in sea transport to Africa" },
+    { "title": "Controlled Lead Times", "description": "Regular rotations and optimized transit times" },
+    { "title": "Guaranteed Security", "description": "Cargo insurance and real-time tracking of your goods" }
+  ],
+  "services": {
+    "title": "Our Sea Freight Services",
+    "subtitle": "Comprehensive maritime solutions for all types of cargo. From pickup to delivery, we manage your freight from A to Z.",
+    "list": [
+      "20' and 40' containers (FCL - Full Container Load)",
+      "Maritime groupage (LCL - Less than Container Load)",
+      "Transport of new and used vehicles",
+      "Industrial machines and heavy equipment",
+      "Dangerous goods (IMO)",
+      "Refrigerated containers (reefer)",
+      "Door-to-door service with pickup",
+      "Import/export customs clearance included"
+    ],
+    "cta": "Request a Personalized Quote"
+  },
+  "destinations": {
+    "title": "Sea Freight Destinations - Africa",
+    "subtitle": "Regular rotations to major African ports with optimized lead times.",
+    "label_duration": "Transit time",
+    "label_frequency": "Frequency",
+    "label_departure": "Departure from",
+    "cta_prefix": "Quote to "
+  },
+  "destinations_list": [
+    { "country": "Congo", "port": "Pointe-Noire", "duration": "18–22 days", "frequency": "Weekly", "departure": "Le Havre, Antwerp" },
+    { "country": "Angola", "port": "Luanda", "duration": "20–25 days", "frequency": "Bi-weekly", "departure": "Antwerp, Rotterdam" },
+    { "country": "Côte d'Ivoire", "port": "Abidjan", "duration": "12–15 days", "frequency": "Daily", "departure": "Le Havre, Marseille" },
+    { "country": "Cameroon", "port": "Douala", "duration": "15–18 days", "frequency": "Bi-weekly", "departure": "Antwerp, Hamburg" }
+  ],
+  "faq": {
+    "title": "Frequently Asked Questions - Sea Freight",
+    "q1": "What is the difference between FCL and LCL?",
+    "a1": "FCL (Full Container Load): you rent a full container (20' or 40') exclusively for your goods. LCL (Less than Container Load): your goods share a container with other shippers, ideal for small volumes.",
+    "q2": "Which documents are required for sea freight?",
+    "a2": "Commercial invoice, packing list, Bill of Lading, certificate of origin if required, and documents specific to the nature of the goods (health certificates, etc.).",
+    "q3": "How can I track my container in transit?",
+    "a3": "We provide a tracking number and access to our web platform for real-time tracking from loading at the departure port to arrival at the destination port."
+  },
+  "final": {
+    "title": "Ready to ship by sea?",
+    "text": "Get your personalized quote in under 24 hours. Our experts analyze your needs and propose the most cost-effective maritime solution.",
+    "cta": "Sea Freight Quote",
+    "whatsapp": "Instant WhatsApp"
+  }
+}

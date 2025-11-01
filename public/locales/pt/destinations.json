@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "Os Nossos Destinos Globais",
+    "subtitle": "Rede extensa de parceiros logísticos para ligar os seus mercados. Rotas otimizadas e frequências ajustadas às suas necessidades de negócio."
+  },
+  "labels": {
+    "port_principal": "Porto principal:",
+    "depart": "Partida:",
+    "duree": "Duração:",
+    "frequence": "Frequência:",
+    "maritime": "Transporte Marítimo",
+    "air": "Transporte Aéreo",
+    "specialites": "Especialidades de transporte:"
+  },
+  "regions": [
+    {
+      "name": "África Central",
+      "countries": [
+        {
+          "name": "Congo",
+          "capital": "Brazzaville",
+          "port": "Pointe-Noire",
+          "maritime": { "from": "Le Havre, Antuérpia", "duration": "18–22 dias", "frequency": "Semanal" },
+          "aerien": { "from": "Paris CDG, Lyon", "duration": "6–8 horas", "frequency": "Diária" },
+          "specialites": ["Veículos", "Máquinas industriais", "Produtos alimentares"]
+        },
+        {
+          "name": "Angola",
+          "capital": "Luanda",
+          "port": "Luanda",
+          "maritime": { "from": "Antuérpia, Roterdão", "duration": "20–25 dias", "frequency": "Bissemanal" },
+          "aerien": { "from": "Paris CDG, Marselha", "duration": "7–9 horas", "frequency": "5x/semana" },
+          "specialites": ["Equipamento médico", "Construção", "Eletrónica"]
+        }
+      ]
+    },
+    {
+      "name": "Ásia",
+      "countries": [
+        {
+          "name": "China",
+          "capital": "Pequim",
+          "port": "Xangai, Shenzhen",
+          "maritime": { "from": "Le Havre, Hamburgo", "duration": "30–35 dias", "frequency": "Diária" },
+          "aerien": { "from": "Paris CDG, Lyon", "duration": "10–12 horas", "frequency": "Diária" },
+          "specialites": ["Importação têxtil", "Eletrónica", "Máquinas"]
+        }
+      ]
+    },
+    {
+      "name": "Médio Oriente",
+      "countries": [
+        {
+          "name": "Turquia",
+          "capital": "Ancara",
+          "port": "Istambul, Izmir",
+          "maritime": { "from": "Marselha, Génova", "duration": "5–7 dias", "frequency": "3x/semana" },
+          "aerien": { "from": "Paris CDG, Lyon, Nice", "duration": "3–4 horas", "frequency": "Diária" },
+          "specialites": ["Têxtil", "Agroalimentar", "Automóvel"]
+        }
+      ]
+    }
+  ],
+  "other": {
+    "not_listed_title": "Destino não listado?",
+    "not_listed_text": "A nossa rede global permite-nos estudar qualquer destino. Contacte-nos para uma análise personalizada do seu projeto.",
+    "fast_response": "Resposta Rápida",
+    "fast_response_desc": "Orçamento em 24h para qualquer destino",
+    "global_network": "Rede Global",
+    "global_network_desc": "Parceiros em mais de 50 países",
+    "tailored": "Soluções à Medida",
+    "tailored_desc": "Adaptadas às suas restrições específicas",
+    "cta_study": "Estudar o meu Destino",
+    "cta_whatsapp": "WhatsApp Direto",
+    "cta_for": "Pedir Orçamento para {{country}}"
+  }
+}

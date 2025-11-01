@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "Wasiliana na Wataalamu Wetu",
+    "subtitle": "Unahitaji nukuu au ushauri? Timu yetu hujibu ndani ya saa 24. Tujadili mradi wako wa vifaa."
+  },
+  "methods": {
+    "email": "Barua pepe",
+    "email_hint": "Majibu ndani ya saa 24 yanahakikishwa",
+    "phone": "Simu",
+    "phone_hours": "Jum–Iju 9–18",
+    "whatsapp": "WhatsApp",
+    "whatsapp_hint": "Jibu la papo hapo",
+    "office": "Ofisi",
+    "office_city": "Paris, Ufaransa",
+    "office_hint": "Kwa miadi",
+    "chat_direct": "Soga Moja kwa Moja"
+  },
+  "guide": {
+    "title": "Jinsi ya kupata nukuu yako?",
+    "intro": "Ili kupendekeza suluhisho bora, tunahitaji taarifa chache kuhusu mradi wako.",
+    "info_title": "Taarifa zinazohitajika",
+    "items": [
+      { "title": "Aina ya mzigo:", "desc": "Asili, uzito, vipimo, thamani" },
+      { "title": "Chanzo na kituo:", "desc": "Anwani sahihi za ukusanyaji na utoaji" },
+      { "title": "Muda unaotakiwa:", "desc": "Tarehe za kusafirisha na kupokea" },
+      { "title": "Huduma za ziada:", "desc": "Bima, ushuru wa forodha, utoaji" }
+    ],
+    "commitment_title": "Ahadi Yetu",
+    "commitment": [
+      { "title": "Jibu la haraka:", "desc": "Nukuu ya kina ndani ya saa 24 za kazi" },
+      { "title": "Uwazi kamili:", "desc": "Gharama zote zimeelezwa, hakuna mshangao" },
+      { "title": "Ushauri wa kitaalamu:", "desc": "Suluhisho bora kwa bajeti yako" },
+      { "title": "Ufuatiliaji binafsi:", "desc": "Mtu maalum wa kuwasiliana kwa mradi wako" }
+    ]
+  },
+  "cta": {
+    "title": "Uko tayari kuanza mradi wako?",
+    "text": "Wataalamu wetu wapo tayari kuchambua mahitaji yako na kupendekeza suluhisho bora la vifaa.",
+    "email": "Tuma Barua pepe",
+    "whatsapp": "WhatsApp Moja kwa Moja",
+    "call": "Piga Sasa"
+  }
+}

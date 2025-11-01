@@ -1,0 +1,66 @@
+{
+  "seo": {
+    "title": "Transporte Marítimo a África - Contenedores FCL LCL | MB Fret Services",
+    "description": "Transporte marítimo profesional a África: Congo, Angola, Costa de Marfil. Contenedores de 20' y 40', FCL y LCL. Presupuesto gratuito en 24h. 15 años de experiencia."
+  },
+  "hero": {
+    "title": "Transporte Marítimo a África",
+    "subtitle": "Soluciones en contenedores FCL y LCL",
+    "intro": "Transporte marítimo profesional a los principales puertos africanos. Contenedores de 20' y 40', groupage LCL, vehículos y mercancías especiales. Rotaciones regulares desde puertos franceses y europeos.",
+    "cta_quote": "Presupuesto Marítimo Gratuito",
+    "cta_whatsapp": "WhatsApp Directo"
+  },
+  "why": {
+    "title": "¿Por qué elegir nuestro transporte marítimo?",
+    "subtitle": "Experiencia reconocida en transporte marítimo a África con soluciones para todas sus necesidades."
+  },
+  "advantages": [
+    { "title": "Experiencia Marítima", "description": "Más de 15 años de experiencia en transporte marítimo a África" },
+    { "title": "Plazos Controlados", "description": "Rotaciones regulares y tiempos de tránsito optimizados" },
+    { "title": "Seguridad Garantizada", "description": "Seguro de carga y seguimiento en tiempo real de sus mercancías" }
+  ],
+  "services": {
+    "title": "Nuestros Servicios de Transporte Marítimo",
+    "subtitle": "Soluciones marítimas integrales para todo tipo de mercancías. Desde la recogida hasta la entrega, gestionamos su carga de principio a fin.",
+    "list": [
+      "Contenedores de 20' y 40' (FCL - Full Container Load)",
+      "Groupage marítimo (LCL - Less than Container Load)",
+      "Transporte de vehículos nuevos y usados",
+      "Maquinaria industrial y equipos pesados",
+      "Mercancías peligrosas (IMO)",
+      "Contenedores refrigerados (reefer)",
+      "Servicio puerta a puerta con recogida",
+      "Despacho de aduanas de importación/exportación incluido"
+    ],
+    "cta": "Solicitar Presupuesto Personalizado"
+  },
+  "destinations": {
+    "title": "Destinos de Transporte Marítimo - África",
+    "subtitle": "Rotaciones regulares a los principales puertos africanos con plazos optimizados.",
+    "label_duration": "Tiempo de tránsito",
+    "label_frequency": "Frecuencia",
+    "label_departure": "Salida desde",
+    "cta_prefix": "Presupuesto a "
+  },
+  "destinations_list": [
+    { "country": "Congo", "port": "Pointe-Noire", "duration": "18–22 días", "frequency": "Semanal", "departure": "Le Havre, Amberes" },
+    { "country": "Angola", "port": "Luanda", "duration": "20–25 días", "frequency": "Bisemanal", "departure": "Amberes, Róterdam" },
+    { "country": "Costa de Marfil", "port": "Abiyán", "duration": "12–15 días", "frequency": "Diaria", "departure": "Le Havre, Marsella" },
+    { "country": "Camerún", "port": "Dualá", "duration": "15–18 días", "frequency": "Bisemanal", "departure": "Amberes, Hamburgo" }
+  ],
+  "faq": {
+    "title": "Preguntas Frecuentes - Transporte Marítimo",
+    "q1": "¿Cuál es la diferencia entre FCL y LCL?",
+    "a1": "FCL (Full Container Load): alquila un contenedor completo (20' o 40') exclusivamente para sus mercancías. LCL (Less than Container Load): sus mercancías comparten un contenedor con otros cargadores, ideal para pequeños volúmenes.",
+    "q2": "¿Qué documentos se requieren para el transporte marítimo?",
+    "a2": "Factura comercial, lista de empaque, conocimiento de embarque (Bill of Lading), certificado de origen si es necesario, y documentos específicos según la naturaleza de las mercancías (certificados sanitarios, etc.).",
+    "q3": "¿Cómo puedo seguir mi contenedor en tránsito?",
+    "a3": "Proporcionamos un número de seguimiento y acceso a nuestra plataforma web para un seguimiento en tiempo real, desde el embarque en el puerto de salida hasta la llegada al puerto de destino."
+  },
+  "final": {
+    "title": "¿Listo para enviar por mar?",
+    "text": "Obtenga su presupuesto personalizado en menos de 24 horas. Nuestros expertos analizan sus necesidades y proponen la solución marítima más económica.",
+    "cta": "Presupuesto Transporte Marítimo",
+    "whatsapp": "WhatsApp Instantáneo"
+  }
+}

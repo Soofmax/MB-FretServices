@@ -1,0 +1,51 @@
+{
+  "page_title": "Aviso legal",
+  "sections": {
+    "info": {
+      "heading": "Información legal",
+      "labels": {
+        "raison_sociale": "Razón social",
+        "forme_juridique": "Forma jurídica",
+        "capital_social": "Capital social",
+        "siege_social": "Domicilio social",
+        "siret": "SIRET",
+        "code_ape": "Código APE"
+      }
+    },
+    "contact": {
+      "heading": "Contacto",
+      "labels": {
+        "telephone": "Teléfono",
+        "email": "Email",
+        "adresse": "Dirección"
+      }
+    },
+    "hosting": {
+      "heading": "Alojamiento",
+      "content_line1": "Este sitio está alojado por [Nombre del proveedor]",
+      "content_line2": "[Dirección del proveedor]"
+    },
+    "ip": {
+      "heading": "Propiedad intelectual",
+      "content": "Este sitio está sujeto a la legislación francesa e internacional sobre derechos de autor y propiedad intelectual. Todos los derechos de reproducción reservados."
+    },
+    "terms": {
+      "heading": "Condiciones de uso",
+      "content": "El uso de este sitio implica la aceptación plena de las condiciones generales de uso descritas a continuación. Estas condiciones pueden modificarse o completarse en cualquier momento."
+    },
+    "privacy": {
+      "heading": "Protección de datos personales",
+      "content1": "De conformidad con la Ley francesa de Protección de Datos del 6 de enero de 1978 (modificada) y el Reglamento General de Protección de Datos (RGPD), usted tiene derecho de acceso, rectificación, portabilidad y supresión de sus datos personales.",
+      "content2": "Para ejercer estos derechos, contáctenos en: contact@mb-fretservices.com"
+    },
+    "cookies": {
+      "heading": "Cookies",
+      "content": "Este sitio utiliza cookies para mejorar la experiencia del usuario y realizar estadísticas de visitas. Al continuar navegando, acepta el uso de estas cookies."
+    },
+    "liability": {
+      "heading": "Responsabilidad",
+      "content": "MB Fret Services se esfuerza por proporcionar información lo más precisa posible. Sin embargo, no se hace responsable de omisiones, inexactitudes o fallos en la actualización, ya sean de su propia responsabilidad o de terceros socios que proporcionan la información."
+    },
+    "last_update": "Última actualización: {{date}}"
+  }
+}

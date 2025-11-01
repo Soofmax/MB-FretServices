@@ -1,0 +1,56 @@
+{
+  "valueProps": {
+    "title": "لماذا تختار MB Fret Services؟",
+    "subtitle": "نمزج الخبرة بالتقنية وشبكة عالمية لتقديم حلول نقل مصمّمة وفق احتياجاتك.",
+    "items": [
+      {
+        "title": "الشحن البحري",
+        "description": "حلول اقتصادية للشحنات الكبيرة إلى أفريقيا وآسيا مع تتبّع لحظي.",
+        "features": ["حاويات 20' و40'", "شحن كامل FCL وشحن مجمّع LCL", "من ميناء إلى ميناء أو من الباب إلى الباب"]
+      },
+      {
+        "title": "الشحن الجوي",
+        "description": "نقل سريع وآمن للبضائع العاجلة وعالية القيمة.",
+        "features": ["تسليم سريع", "درجة حرارة مُتحكَّم بها", "تتبّع GPS مستمر"]
+      },
+      {
+        "title": "التخليص الجمركي",
+        "description": "خبرة كاملة في الإجراءات الجمركية لتيسير تجارتك الدولية.",
+        "features": ["تصاريح جمركية", "امتثال تنظيمي", "دعم إداري"]
+      }
+    ]
+  },
+  "destinations_title": "وجهاتنا الرئيسية",
+  "destinations_subtitle": "نخدم أهم الأسواق العالمية بحلول مكيّفة لكل منطقة ونوع شحنة.",
+  "destinations_more": "عرض جميع الوجهات",
+  "destinations_need_specific": "تحتاج وجهة محدّدة؟ ندرس جميع الطلبات.",
+  "showcase": [
+    {
+      "country": "الكونغو",
+      "city": "بوانت‑نوار",
+      "image": "https://images.pexels.com/photos/5668842/pexels-photo-5668842.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["بحريًا من لو هافر", "جويًا من باريس CDG"]
+    },
+    {
+      "country": "أنغولا",
+      "city": "لواندا",
+      "image": "https://images.pexels.com/photos/9638839/pexels-photo-9638839.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["بحريًا من أنتويرب", "جويًا من مرسيليا"]
+    },
+    {
+      "country": "الصين",
+      "city": "شنغهاي",
+      "image": "https://images.pexels.com/photos/2412603/pexels-photo-2412603.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["مسار بحري عبر الهادئ", "رحلات جوية مباشرة"]
+    },
+    {
+      "country": "تركيا",
+      "city": "إسطنبول",
+      "image": "https://images.pexels.com/photos/1723637/pexels-photo-1723637.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "routes": ["نقل بري", "جويًا من ليون"]
+    }
+  ],
+  "final_cta_title": "هل أنت مستعد لشحن بضاعتك؟",
+  "final_cta_text": "احصل على عرض سعر مخصّص خلال أقل من 24 ساعة. خبراؤنا يرافقونك في كل خطوة من مشروعك اللوجستي.",
+  "whatsapp": "تواصل عبر واتساب"
+}

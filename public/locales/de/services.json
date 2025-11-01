@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "Unsere internationalen Transportleistungen",
+    "subtitle": "End-to-End-Logistik, zugeschnitten auf Ihre Bedürfnisse. Von kostengünstiger Seefracht bis zu Express-Lufttransport – wir managen Ihre Fracht von A bis Z."
+  },
+  "maritime": {
+    "title": "Seefracht",
+    "subtitle": "Kostengünstige Lösungen für große Volumen",
+    "description": "Unsere Seefracht-Expertise ermöglicht optimale Lösungen für große Sendungen nach Afrika und Asien. Wir betreuen alle Frachtarten mit vollständigem Tracking.",
+    "features": [
+      "20'- und 40'-Container (FCL)",
+      "Groupage (LCL) für kleine Volumen",
+      "Transport von Fahrzeugen und Maschinen",
+      "Sonder- und Gefahrgut",
+      "Hafen-zu-Hafen oder Door-to-Door",
+      "Echtzeit-Tracking über Webplattform"
+    ],
+    "destinations": "Wichtige Ziele: Kongo, Angola, Elfenbeinküste, Kamerun",
+    "more_link": "Mehr zur Seefracht"
+  },
+  "air": {
+    "title": "Luftfracht",
+    "subtitle": "Schnelligkeit und Zuverlässigkeit für Dringendes",
+    "description": "Lufttransport ist ideal für hochwertige, verderbliche oder eilige Güter. Unser Partnernetz gewährleistet kurze Laufzeiten zu allen Zielen.",
+    "features": [
+      "Express 24–48 h zu Hauptzielen",
+      "Temperaturgeführter Transport",
+      "Empfindliche und hochwertige Güter",
+      "Dokumente und Proben",
+      "GPS-Tracking in Echtzeit",
+      "All-Risk-Versicherung inklusive"
+    ],
+    "destinations": "Bedient: China, Türkei, Marokko, Tunesien, Zentralafrika"
+  },
+  "customs": {
+    "title": "Zollabfertigung",
+    "subtitle": "Umfassende administrative Expertise",
+    "description": "Unser Team aus lizenzierten Zollagenten begleitet Sie bei allen Formalitäten. Wir garantieren die regulatorische Konformität Ihrer Abläufe.",
+    "features": [
+      "Import-/Export-Anmeldungen",
+      "Verwaltung besonderer Zollverfahren",
+      "Beratung zur Tarifklassifizierung",
+      "Rechtskonforme Steueroptimierung",
+      "Vertretung bei Kontrollen",
+      "Kontinuierliches Monitoring der Vorschriften"
+    ],
+    "destinations": "Alle französischen und europäischen Häfen und Flughäfen"
+  },
+  "insurance": {
+    "title": "Frachtversicherung",
+    "subtitle": "Umfassender Schutz für Ihre Güter",
+    "description": "Schützen Sie Ihre Investition mit Versicherungslösungen für jedes Transportmittel. Vollständige Abdeckung vom Abholen bis zur Endzustellung.",
+    "features": [
+      "All-Risk-Transportversicherung",
+      "Deckung bei Krieg und Streik",
+      "Havarie-Grosse-Schutz",
+      "Expertise und schnelle Regulierung",
+      "Risikopräventionsberatung",
+      "Vorzugstarife nach Volumen"
+    ],
+    "destinations": "Weltweite Abdeckung für alle Transportmodi"
+  },
+  "labels": {
+    "destinations": "Ziele: "
+  },
+  "ctaSection": {
+    "title": "Benötigen Sie eine maßgeschneiderte Lösung?",
+    "text": "Jedes Logistikprojekt ist einzigartig. Unsere Experten analysieren Ihren Bedarf und schlagen die passendste und wirtschaftlichste Lösung vor.",
+    "consultation": "Kostenlose Beratung",
+    "whatsapp": "WhatsApp-Chat"
+  }
+}
